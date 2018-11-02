@@ -3,7 +3,7 @@
 // Contanainer 
 .container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column;
   justify-content: space-around;
   background: $secondColor;
   #section_operaciones {
@@ -12,7 +12,7 @@
     margin-left: 2%;
     width: 100%;
     input {
-      width: 85%;
+      width: 80%;
       margin: 0px;
       background: $primaryColor;
       border: none;
@@ -22,10 +22,38 @@
       background: $threeColor;
       border: none;
       height: 40px;
-      width:12%;
+      width: 12%;
       i::before {
-        background: yellow;
+        background: $threeColor;
       }
+    }
+  }
+  #section_numbers {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; 
+    // background: red;
+    margin-bottom: 20px;
+    color: $white;
+    .cant {
+      width: 10%; 
+      // background: aqua;
+      padding-left: 10px;
+      p {
+        margin-left: 35%;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+      }
+    }
+    .products{
+      width: 60%;
+      //background: darkgreen;
+    }
+    .precios{
+      width: 20%;
+      //background: blue;
     }
   }
 }

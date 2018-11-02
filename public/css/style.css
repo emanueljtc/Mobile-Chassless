@@ -1,9 +1,10 @@
 * {
-  background: #d21452; }
+  margin: 0;
+  box-sizing: content-box; }
 
 .container {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column;
   justify-content: space-around;
   background: #d21452; }
   .container #section_operaciones {
@@ -12,7 +13,7 @@
     margin-left: 2%;
     width: 100%; }
     .container #section_operaciones input {
-      width: 85%;
+      width: 80%;
       margin: 0px;
       background: #b21649;
       border: none;
@@ -23,6 +24,25 @@
       height: 40px;
       width: 12%; }
       .container #section_operaciones .btn i::before {
-        background: yellow; }
+        background: #f1ef12; }
+  .container #section_numbers {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color: #fff; }
+    .container #section_numbers .cant {
+      width: 10%;
+      padding-left: 10px; }
+      .container #section_numbers .cant p {
+        margin-left: 35%;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+    .container #section_numbers .products {
+      width: 60%; }
+    .container #section_numbers .precios {
+      width: 20%; }
 
 /*# sourceMappingURL=style.css.map */

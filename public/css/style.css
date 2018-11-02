@@ -12,16 +12,16 @@
     margin-left: 2%;
     width: 100%; }
     .container #section_operaciones input {
-      width: 90%;
+      width: 85%;
       margin: 0px;
       background: #b21649;
       border: none;
-      height: 30px; }
+      height: 40px; }
     .container #section_operaciones .btn {
       background: #f1ef12;
       border: none;
-      height: 30px;
-      width: 8%; }
+      height: 40px;
+      width: 12%; }
       .container #section_operaciones .btn i::before {
         background: yellow; }
 

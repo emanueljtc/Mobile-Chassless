@@ -1,0 +1,28 @@
+* {
+  background: #d21452; }
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background: #d21452; }
+  .container #section_operaciones {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    width: 100%; }
+    .container #section_operaciones input {
+      width: 90%;
+      margin: 0px;
+      background: #b21649;
+      border: none;
+      height: 30px; }
+    .container #section_operaciones .btn {
+      background: #f1ef12;
+      border: none;
+      height: 30px;
+      width: 8%; }
+      .container #section_operaciones .btn i::before {
+        background: yellow; }
+
+/*# sourceMappingURL=style.css.map */

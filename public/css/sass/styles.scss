@@ -1,0 +1,31 @@
+@import "constantes";
+@import "reset";
+// Contanainer 
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background: $secondColor;
+  #section_operaciones {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    width: 100%;
+    input {
+      width: 90%;
+      margin: 0px;
+      background: $primaryColor;
+      border: none;
+      height: 30px;
+    }
+    .btn {
+      background: $threeColor;
+      border: none;
+      height: 30px;
+      width:8%;
+      i::before {
+        background: yellow;
+      }
+    }
+  }
+}

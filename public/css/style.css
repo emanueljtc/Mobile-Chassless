@@ -75,6 +75,8 @@
       color: #d21452;
       background: #fff;
       font-size: 16px; }
+      .container div.boton .btn-cobrar:hover {
+        background: #e9c0c0ba; }
   .container .toogle {
     width: 101%;
     background: rgba(0, 0, 0, 0.129);
@@ -86,35 +88,81 @@
       color: white;
       font-size: 20px;
       padding-top: 10px; }
-    .container .toogle .combo {
+    .container .toogle .combo, .container .toogle .teclado {
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around; }
-      .container .toogle .combo .c-1,
-      .container .toogle .combo .c-2,
-      .container .toogle .combo .c-3 {
-        width: 30%;
-        margin-top: 10px; }
-        .container .toogle .combo .c-1 button,
-        .container .toogle .combo .c-2 button,
-        .container .toogle .combo .c-3 button {
-          width: 80%;
-          height: 75px;
-          margin-bottom: 20px;
-          background: #00000029;
-          border: none;
-          color: #fff;
-          font-weight: bold;
-          text-transform: uppercase; }
-      .container .toogle .combo .c-3 > button:nth-child(2n) {
-        background: #f1ef12;
-        height: 170px; }
-        .container .toogle .combo .c-3 > button:nth-child(2n) i {
-          margin-bottom: 50px; }
-        .container .toogle .combo .c-3 > button:nth-child(2n) p {
-          color: red; }
+    .container .toogle .combo .c-1,
+    .container .toogle .combo .c-2,
+    .container .toogle .combo .c-3,
+    .container .toogle .combo .c-4, .container .toogle .teclado .c-1,
+    .container .toogle .teclado .c-2,
+    .container .toogle .teclado .c-3,
+    .container .toogle .teclado .c-4 {
+      margin-top: 10px; }
+      .container .toogle .combo .c-1 button,
+      .container .toogle .combo .c-2 button,
+      .container .toogle .combo .c-3 button,
+      .container .toogle .combo .c-4 button, .container .toogle .teclado .c-1 button,
+      .container .toogle .teclado .c-2 button,
+      .container .toogle .teclado .c-3 button,
+      .container .toogle .teclado .c-4 button {
+        width: 80%;
+        height: 75px;
+        margin-bottom: 20px;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase; }
+        .container .toogle .combo .c-1 button:hover,
+        .container .toogle .combo .c-2 button:hover,
+        .container .toogle .combo .c-3 button:hover,
+        .container .toogle .combo .c-4 button:hover, .container .toogle .teclado .c-1 button:hover,
+        .container .toogle .teclado .c-2 button:hover,
+        .container .toogle .teclado .c-3 button:hover,
+        .container .toogle .teclado .c-4 button:hover {
+          background-color: #e9c0c0ba; }
+    .container .toogle .combo .c-1, .container .toogle .combo .c-2, .container .toogle .combo .c-3 {
+      width: 30%; }
+      .container .toogle .combo .c-1 button, .container .toogle .combo .c-2 button, .container .toogle .combo .c-3 button {
+        background: #00000029; }
+    .container .toogle .combo .c-3 > button:nth-child(2n) {
+      background: #f1ef12;
+      height: 170px; }
+      .container .toogle .combo .c-3 > button:nth-child(2n) i {
+        margin-bottom: 50px; }
+      .container .toogle .combo .c-3 > button:nth-child(2n) p {
+        color: red; }
+    .container .toogle .teclado .c-1, .container .toogle .teclado .c-2, .container .toogle .teclado .c-3, .container .toogle .teclado .c-4 {
+      width: 25%; }
+      .container .toogle .teclado .c-1 button, .container .toogle .teclado .c-2 button, .container .toogle .teclado .c-3 button, .container .toogle .teclado .c-4 button {
+        background: #e648ea78; }
+    .container .toogle .teclado .c-1 {
+      margin-left: 6px; }
+    .container .toogle .teclado .c-1 > button:nth-child(4n) {
+      background: rgba(210, 20, 82, 0.09); }
+    .container .toogle .teclado .c-1 > button > i {
+      font-size: 20px; }
+    .container .toogle .teclado .c-4 {
+      margin-right: 10px; }
+      .container .toogle .teclado .c-4 button {
+        background: #00000029; }
+    .container .toogle .teclado .c-4 > button:nth-child(4n) {
+      width: 180%;
+      margin-left: -87px;
+      background: #f1ef12; }
+      .container .toogle .teclado .c-4 > button:nth-child(4n) p {
+        color: red;
+        width: 50%;
+        display: inline-block;
+        margin-right: -10px; }
+      .container .toogle .teclado .c-4 > button:nth-child(4n) i {
+        width: 50%;
+        font-size: 20px; }
   .container .ocultar {
-    display: none !important; }
+    display: none; }
+  .container .mostrar {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */

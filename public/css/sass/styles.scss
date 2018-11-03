@@ -89,6 +89,9 @@
       color: $secondColor;
       background: $button-cobrar;
       font-size: 16px;
+      &:hover{
+        background: $hover;
+      }
     }
   }
   .toogle {
@@ -103,25 +106,38 @@
       font-size: 20px;
       padding-top: 10px;
     }
-    .combo {
+    .combo, .teclado{
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around;
+    }
+    .combo, .teclado {
       .c-1,
       .c-2,
-      .c-3 {
-        width: 30%;
+      .c-3,
+      .c-4 {
         margin-top: 10px;
         button {
           width: 80%;
           height: 75px;
           margin-bottom: 20px;
-          background: #00000029;
           border: none;
           color: $color-font;
           font-weight: bold;
           text-transform: uppercase;
+          &:hover{
+            background-color: $hover;
+          }
+        } 
+      }
+     
+    }
+    .combo{
+      .c-1, .c-2, .c-3{
+        width: 30%;
+        button{
+          background: #00000029;
         }
       }
       .c-3>button:nth-child(2n) {
@@ -135,8 +151,49 @@
         }
       }
     }
+    .teclado{
+       .c-1, .c-2, .c-3, .c-4{
+        width: 25%;
+        button{
+          background: #e648ea78;
+        }
+      }
+      .c-1{
+        margin-left: 6px; 
+      }
+      .c-1>button:nth-child(4n){
+        background: $cancelar
+      }
+      .c-1>button>i{
+        font-size: 20px;
+      }
+      .c-4 {
+        margin-right: 10px;
+        button{
+          background: #00000029;
+        }
+      }
+      .c-4>button:nth-child(4n){
+        width: 180%;
+        margin-left: -87px;
+        background: $threeColor;
+        p{
+          color: red;
+          width: 50%;
+          display: inline-block;
+          margin-right: -10px;
+        }
+        i{
+          width: 50%;
+          font-size: 20px;
+        }
+      }
+    }
   }
   .ocultar{
-    display: none !important;
+    display: none;
+  }
+  .mostrar{
+    display: block;
   }
 }

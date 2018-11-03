@@ -14,7 +14,8 @@
   <div class="container">
     <section id="section_operaciones">
       <input name="operaciones" class="operaciones"/>
-      <button class="btn" onclick="options()"><i class="fas fa-calculator"></i></button>
+      <button class="btn btn-teclado mostrar_null" onclick="teclado()"><i class="fas fa-calculator"></i></button>
+      <button class="btn btn-combo ocultar" onclick="combo()"><i class="fas fa-list-ul"></i></button>
     </section>
     <section id="section_numbers">
         <div class="cant">
@@ -88,7 +89,7 @@
             </button>
           </div>
         </div>
-        <div class="teclado" id="teclado">
+        <div class="teclado ocultar" id="teclado">
           <div class="c-1">
             <button>1</button>
             <button>4</button>

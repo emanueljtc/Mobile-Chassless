@@ -95,7 +95,7 @@
     }
   }
   .toogle {
-    width: 101%;
+    width: 100%;
     background: $color-toogle;
     height: auto;
     display: block;
@@ -191,9 +191,12 @@
     }
   }
   .ocultar{
-    display: none;
+    display: none !important;
   }
   .mostrar{
     display: block;
+  }
+  .mostrar_null{
+
   }
 }

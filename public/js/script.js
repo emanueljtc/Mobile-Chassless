@@ -36,4 +36,56 @@ function toogleDown() {
   }
 }
 
-//Function Options
+//Function teclado
+
+function teclado(){
+  var teclado = document.getElementsByClassName("teclado");
+  var combo = document.getElementsByClassName("combo");
+  var btnTeclado = document.getElementsByClassName("btn-teclado");
+  var btnCombo = document.getElementsByClassName("btn-combo");
+  
+  for (var i = 0; i < teclado.length; i++) {
+    teclado[i].classList.remove("ocultar");
+  }
+  for (var i = 0; i < combo.length; i++) {
+    combo[i].classList.add("ocultar");
+  }
+  for (var i = 0; i < btnTeclado.length; i++) {
+    btnTeclado[i].classList.remove("mostrar");
+    btnTeclado[i].classList.add("ocultar");
+
+  }
+  for (var i = 0; i < btnCombo.length; i++) {
+    btnCombo[i].classList.remove("ocultar");
+    btnCombo[i].classList.add("mostrar_null");
+
+  }
+}
+
+// Function Combo
+
+function combo(){
+  var teclado = document.getElementsByClassName("teclado");
+  var combo = document.getElementsByClassName("combo");
+  var btnTeclado = document.getElementsByClassName("btn-teclado");
+  var btnCombo = document.getElementsByClassName("btn-combo");
+
+  for (var i = 0; i < teclado.length; i++) {
+    teclado[i].classList.add("ocultar");
+    teclado[i].classList.remove("mostrar");
+  }
+  for (var i = 0; i < combo.length; i++) {
+    combo[i].classList.remove("ocultar");
+    combo[i].classList.add("mostrar");
+  }
+  for (var i = 0; i < btnCombo.length; i++) {
+    btnCombo[i].classList.remove("mostrar_null");
+    btnCombo[i].classList.add("ocultar");
+
+
+  }
+  for (var i = 0; i < btnTeclado.length; i++) {
+    btnTeclado[i].classList.remove("ocultar");
+    btnTeclado[i].classList.add("mostrar_null");
+  }
+}

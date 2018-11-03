@@ -78,7 +78,7 @@
       .container div.boton .btn-cobrar:hover {
         background: #e9c0c0ba; }
   .container .toogle {
-    width: 101%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.129);
     height: auto;
     display: block;
@@ -161,7 +161,7 @@
         width: 50%;
         font-size: 20px; }
   .container .ocultar {
-    display: none; }
+    display: none !important; }
   .container .mostrar {
     display: block; }
 

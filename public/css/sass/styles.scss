@@ -28,32 +28,115 @@
       }
     }
   }
-  #section_numbers {
+  #section_numbers,
+  #section_total {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around; 
+    justify-content: space-around;
+    p {
+      color: $color-font;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+  }
+  #section_numbers {
     // background: red;
     margin-bottom: 20px;
-    color: $white;
     .cant {
-      width: 10%; 
-      // background: aqua;
-      padding-left: 10px;
-      p {
-        margin-left: 35%;
-        font-weight: bold;
-        font-size: 16px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+      width: 10%; // background: aqua;
+      padding-left: 30px;
+    }
+    .products {
+      width: 60%; //background: darkgreen;
+    }
+    .precios {
+      width: 20%; //background: blue;
+      padding-right: 20px;
+    }
+  }
+  hr {
+    background-color: $color-line;
+    height: 1px;
+    border: none;
+    width: 90%;
+    margin: auto;
+  }
+  #section_total {
+    margin-top: 20px;
+    .text {
+      width: 20%;
+      text-transform: uppercase;
+    }
+    .monto {
+      width: 55%;
+      text-align: right;
+    }
+  }
+  div.boton {
+    width: 100%;
+    margin-top: 20px;
+    button.btn {
+      width: 90%;
+      height: 50px;
+      margin: auto 2% auto 2%;
+      border: none;
+    }
+    .btn-cobrar {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $secondColor;
+      background: $button-cobrar;
+      font-size: 16px;
+    }
+  }
+  .toogle {
+    width: 101%;
+    background: $color-toogle;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    span>i {
+      color: white;
+      font-size: 20px;
+      padding-top: 10px;
+    }
+    .combo {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      .c-1,
+      .c-2,
+      .c-3 {
+        width: 30%;
+        margin-top: 10px;
+        button {
+          width: 80%;
+          height: 75px;
+          margin-bottom: 20px;
+          background: #00000029;
+          border: none;
+          color: $color-font;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+      .c-3>button:nth-child(2n) {
+        background: $threeColor;
+        height: 170px;
+        i {
+          margin-bottom: 50px;
+        }
+        p {
+          color: red;
+        }
       }
     }
-    .products{
-      width: 60%;
-      //background: darkgreen;
-    }
-    .precios{
-      width: 20%;
-      //background: blue;
-    }
+  }
+  .ocultar{
+    display: none !important;
   }
 }

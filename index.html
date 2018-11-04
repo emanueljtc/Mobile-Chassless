@@ -14,8 +14,8 @@
   <div class="container">
     <section id="section_operaciones">
       <input name="operaciones" class="operaciones"/>
-      <button class="btn btn-teclado mostrar_null" onclick="teclado()"><i class="fas fa-calculator"></i></button>
-      <button class="btn btn-combo ocultar" onclick="combo()"><i class="fas fa-list-ul"></i></button>
+      <button type="button" disabled id ="tecladoId" class="btn btn-teclado mostrar_null" onclick="f_teclado()"><i class="fas fa-calculator"></i></button>
+      <button type="button" disabled  class="btn btn-combo ocultar" onclick="f_combo()"><i class="fas fa-list-ul"></i></button>
     </section>
     <section id="section_numbers">
         <div class="cant">
@@ -31,7 +31,7 @@
           <p>$ 500</p>
         </div>
     </section>
-    <hr>
+    <hr class="line">
     <section id="section_total">
       <div class="text">
         <p>total</p>
@@ -49,7 +49,7 @@
         <span><i class="fas fa-angle-double-down ocultar" onclick="toogleDown()"></i></span>
 
       <div class="options ocultar">
-        <div class="combo" id="combo">
+        <div  class="combo" id="combo">
           <div class="c-1">
             <button>
               <p>Papas</p>

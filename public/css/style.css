@@ -54,7 +54,7 @@
     height: 1px;
     border: none;
     width: 90%;
-    margin: auto; }
+    margin: auto 15px 5px; }
   .container #section_total {
     margin-top: 20px; }
     .container #section_total .text {
@@ -91,7 +91,8 @@
       font-size: 20px;
       padding-top: 10px;
       padding-bottom: 15px; }
-    .container .toogle .combo, .container .toogle .teclado {
+    .container .toogle .combo,
+    .container .toogle .teclado {
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
@@ -99,7 +100,8 @@
     .container .toogle .combo .c-1,
     .container .toogle .combo .c-2,
     .container .toogle .combo .c-3,
-    .container .toogle .combo .c-4, .container .toogle .teclado .c-1,
+    .container .toogle .combo .c-4,
+    .container .toogle .teclado .c-1,
     .container .toogle .teclado .c-2,
     .container .toogle .teclado .c-3,
     .container .toogle .teclado .c-4 {
@@ -107,13 +109,12 @@
       .container .toogle .combo .c-1 button,
       .container .toogle .combo .c-2 button,
       .container .toogle .combo .c-3 button,
-      .container .toogle .combo .c-4 button, .container .toogle .teclado .c-1 button,
+      .container .toogle .combo .c-4 button,
+      .container .toogle .teclado .c-1 button,
       .container .toogle .teclado .c-2 button,
       .container .toogle .teclado .c-3 button,
       .container .toogle .teclado .c-4 button {
-        width: 80%;
-        height: 75px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         border: none;
         color: #fff;
         font-weight: bold;
@@ -121,25 +122,39 @@
         .container .toogle .combo .c-1 button:hover,
         .container .toogle .combo .c-2 button:hover,
         .container .toogle .combo .c-3 button:hover,
-        .container .toogle .combo .c-4 button:hover, .container .toogle .teclado .c-1 button:hover,
+        .container .toogle .combo .c-4 button:hover,
+        .container .toogle .teclado .c-1 button:hover,
         .container .toogle .teclado .c-2 button:hover,
         .container .toogle .teclado .c-3 button:hover,
         .container .toogle .teclado .c-4 button:hover {
           background-color: #e9c0c0ba; }
-    .container .toogle .combo .c-1, .container .toogle .combo .c-2, .container .toogle .combo .c-3 {
+    .container .toogle .combo .c-1,
+    .container .toogle .combo .c-2,
+    .container .toogle .combo .c-3 {
       width: 30%; }
-      .container .toogle .combo .c-1 button, .container .toogle .combo .c-2 button, .container .toogle .combo .c-3 button {
+      .container .toogle .combo .c-1 button,
+      .container .toogle .combo .c-2 button,
+      .container .toogle .combo .c-3 button {
         background: #00000029; }
+    .container .toogle .combo button {
+      width: 90%;
+      height: 90px; }
     .container .toogle .combo .c-3 > button:nth-child(2n) {
       background: #f1ef12;
-      height: 170px; }
+      height: 185px; }
       .container .toogle .combo .c-3 > button:nth-child(2n) i {
         margin-bottom: 50px; }
       .container .toogle .combo .c-3 > button:nth-child(2n) p {
         color: red; }
-    .container .toogle .teclado .c-1, .container .toogle .teclado .c-2, .container .toogle .teclado .c-3, .container .toogle .teclado .c-4 {
+    .container .toogle .teclado .c-1,
+    .container .toogle .teclado .c-2,
+    .container .toogle .teclado .c-3,
+    .container .toogle .teclado .c-4 {
       width: 25%; }
-      .container .toogle .teclado .c-1 button, .container .toogle .teclado .c-2 button, .container .toogle .teclado .c-3 button, .container .toogle .teclado .c-4 button {
+      .container .toogle .teclado .c-1 button,
+      .container .toogle .teclado .c-2 button,
+      .container .toogle .teclado .c-3 button,
+      .container .toogle .teclado .c-4 button {
         background: #e648ea78; }
     .container .toogle .teclado .c-1 {
       margin-left: 6px; }
@@ -163,6 +178,9 @@
       .container .toogle .teclado .c-4 > button:nth-child(4n) i {
         width: 50%;
         font-size: 20px; }
+    .container .toogle .teclado button {
+      width: 80%;
+      height: 90px; }
   .container .ocultar {
     display: none !important; }
   .container .mostrar {

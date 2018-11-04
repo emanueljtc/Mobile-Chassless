@@ -1,12 +1,17 @@
-let options = document.getElementById("options");
-let arrowUp = document.getElementById("arrowUp");
-let arrowDown = document.getElementById("arrowDown");
-let line = document.getElementById("line");
-let btnTeclado = document.getElementById("buttonTeclado");
-let btnCombo = document.getElementById("buttonCombo");
-let teclado = document.getElementById("teclado");
-let combo = document.getElementById("combo");
+// Constants
+const options = document.getElementById("options");
+const arrowUp = document.getElementById("arrowUp");
+const arrowDown = document.getElementById("arrowDown");
+const line = document.getElementById("line");
+const btnKeyboard = document.getElementById("buttonKeyboard");
+const btnCombo = document.getElementById("buttonCombo");
+const Keyboard = document.getElementById("Keyboard");
+const combo = document.getElementById("combo");
 
+arrowUp.addEventListener("click", toogleUp);
+arrowDown.addEventListener("click", toogleDown);
+btnKeyboard.addEventListener("click", f_Keyboard);
+btnCombo.addEventListener("click", f_combo);
 
 // Function Toogle
 function toogleUp(){
@@ -14,12 +19,12 @@ function toogleUp(){
   arrowUp.classList.replace("mostrar", "ocultar");
   arrowDown.classList.replace("ocultar", "mostrar");
   
-  if (btnTeclado.classList.contains('ocultar')) {
+  if (btnKeyboard.classList.contains('ocultar')) {
       line.classList.remove("mostrar");
       line.classList.add("ocultar");
   }
   
-  btnTeclado.disabled = false;
+  btnKeyboard.disabled = false;
   btnCombo.disabled = false;
 }
 function toogleDown() {
@@ -27,17 +32,17 @@ function toogleDown() {
   arrowUp.classList.replace("ocultar", "mostrar");
   arrowDown.classList.replace("mostrar", "ocultar");
   line.classList.remove("ocultar");
-  btnTeclado.disabled = true;
+  btnKeyboard.disabled = true;
   btnCombo[i].disabled = true;
 }
 
-//Function teclado
+//Function Keyboard
 
-function f_teclado(){
-  teclado.classList.remove("ocultar");
+function f_Keyboard(){
+  Keyboard.classList.remove("ocultar");
   combo.classList.add("ocultar");
-  btnTeclado.classList.remove("mostrar");
-  btnTeclado.classList.add("ocultar");
+  btnKeyboard.classList.remove("mostrar");
+  btnKeyboard.classList.add("ocultar");
   btnCombo.classList.remove("ocultar");
   btnCombo.classList.add("mostrar_null");
   line.classList.add("ocultar");
@@ -46,13 +51,13 @@ function f_teclado(){
 // Function Combo
 
 function f_combo(){
-  teclado.classList.add("ocultar");
-  teclado.classList.remove("mostrar");
+  Keyboard.classList.add("ocultar");
+  Keyboard.classList.remove("mostrar");
   combo.classList.remove("ocultar");
   combo.classList.add("mostrar");
   btnCombo.classList.remove("mostrar_null");
   btnCombo.classList.add("ocultar");
-  btnTeclado.classList.remove("ocultar");
-  btnTeclado.classList.add("mostrar_null");
+  btnKeyboard.classList.remove("ocultar");
+  btnKeyboard.classList.add("mostrar_null");
   line.classList.remove("ocultar");
 }

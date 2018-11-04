@@ -92,7 +92,7 @@
       padding-top: 10px;
       padding-bottom: 15px; }
     .container .toogle .combo,
-    .container .toogle .teclado {
+    .container .toogle .Keyboard {
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
@@ -101,19 +101,19 @@
     .container .toogle .combo .c-2,
     .container .toogle .combo .c-3,
     .container .toogle .combo .c-4,
-    .container .toogle .teclado .c-1,
-    .container .toogle .teclado .c-2,
-    .container .toogle .teclado .c-3,
-    .container .toogle .teclado .c-4 {
+    .container .toogle .Keyboard .c-1,
+    .container .toogle .Keyboard .c-2,
+    .container .toogle .Keyboard .c-3,
+    .container .toogle .Keyboard .c-4 {
       margin-top: 10px; }
       .container .toogle .combo .c-1 button,
       .container .toogle .combo .c-2 button,
       .container .toogle .combo .c-3 button,
       .container .toogle .combo .c-4 button,
-      .container .toogle .teclado .c-1 button,
-      .container .toogle .teclado .c-2 button,
-      .container .toogle .teclado .c-3 button,
-      .container .toogle .teclado .c-4 button {
+      .container .toogle .Keyboard .c-1 button,
+      .container .toogle .Keyboard .c-2 button,
+      .container .toogle .Keyboard .c-3 button,
+      .container .toogle .Keyboard .c-4 button {
         margin-bottom: 5px;
         border: none;
         color: #fff;
@@ -123,10 +123,10 @@
         .container .toogle .combo .c-2 button:hover,
         .container .toogle .combo .c-3 button:hover,
         .container .toogle .combo .c-4 button:hover,
-        .container .toogle .teclado .c-1 button:hover,
-        .container .toogle .teclado .c-2 button:hover,
-        .container .toogle .teclado .c-3 button:hover,
-        .container .toogle .teclado .c-4 button:hover {
+        .container .toogle .Keyboard .c-1 button:hover,
+        .container .toogle .Keyboard .c-2 button:hover,
+        .container .toogle .Keyboard .c-3 button:hover,
+        .container .toogle .Keyboard .c-4 button:hover {
           background-color: #e9c0c0ba; }
     .container .toogle .combo .c-1,
     .container .toogle .combo .c-2,
@@ -146,39 +146,39 @@
         margin-bottom: 50px; }
       .container .toogle .combo .c-3 > button:nth-child(2n) p {
         color: red; }
-    .container .toogle .teclado .c-1,
-    .container .toogle .teclado .c-2,
-    .container .toogle .teclado .c-3,
-    .container .toogle .teclado .c-4 {
+    .container .toogle .Keyboard .c-1,
+    .container .toogle .Keyboard .c-2,
+    .container .toogle .Keyboard .c-3,
+    .container .toogle .Keyboard .c-4 {
       width: 25%; }
-      .container .toogle .teclado .c-1 button,
-      .container .toogle .teclado .c-2 button,
-      .container .toogle .teclado .c-3 button,
-      .container .toogle .teclado .c-4 button {
+      .container .toogle .Keyboard .c-1 button,
+      .container .toogle .Keyboard .c-2 button,
+      .container .toogle .Keyboard .c-3 button,
+      .container .toogle .Keyboard .c-4 button {
         background: #e648ea78; }
-    .container .toogle .teclado .c-1 {
+    .container .toogle .Keyboard .c-1 {
       margin-left: 6px; }
-    .container .toogle .teclado .c-1 > button:nth-child(4n) {
+    .container .toogle .Keyboard .c-1 > button:nth-child(4n) {
       background: rgba(210, 20, 82, 0.09); }
-    .container .toogle .teclado .c-1 > button > i {
+    .container .toogle .Keyboard .c-1 > button > i {
       font-size: 20px; }
-    .container .toogle .teclado .c-4 {
+    .container .toogle .Keyboard .c-4 {
       margin-right: 10px; }
-      .container .toogle .teclado .c-4 button {
+      .container .toogle .Keyboard .c-4 button {
         background: #00000029; }
-    .container .toogle .teclado .c-4 > button:nth-child(4n) {
+    .container .toogle .Keyboard .c-4 > button:nth-child(4n) {
       width: 180%;
       margin-left: -87px;
       background: #f1ef12; }
-      .container .toogle .teclado .c-4 > button:nth-child(4n) p {
+      .container .toogle .Keyboard .c-4 > button:nth-child(4n) p {
         color: red;
         width: 50%;
         display: inline-block;
         margin-right: -10px; }
-      .container .toogle .teclado .c-4 > button:nth-child(4n) i {
+      .container .toogle .Keyboard .c-4 > button:nth-child(4n) i {
         width: 50%;
         font-size: 20px; }
-    .container .toogle .teclado button {
+    .container .toogle .Keyboard button {
       width: 80%;
       height: 90px; }
   .container .ocultar {

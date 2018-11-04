@@ -1,10 +1,11 @@
 {
   "name": "Mobile-Chassless",
-  "version": "1.1",
+  "version": "1.1.0",
   "description": "Mobile Chassless - Test de Conocimiento para la empresa Jida Desarrollos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src",
+    "dev": "node src"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
   }
 }

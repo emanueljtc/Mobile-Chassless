@@ -15,23 +15,23 @@ btnCombo.addEventListener("click", f_combo);
 
 // Function Toogle
 function toogleUp(){
-  options.classList.replace("ocultar", "mostrar");
-  arrowUp.classList.replace("mostrar", "ocultar");
-  arrowDown.classList.replace("ocultar", "mostrar");
+  options.classList.replace("hide", "show");
+  arrowUp.classList.replace("show", "hide");
+  arrowDown.classList.replace("hide", "show");
   
-  if (btnKeyboard.classList.contains('ocultar')) {
-      line.classList.remove("mostrar");
-      line.classList.add("ocultar");
+  if (btnKeyboard.classList.contains('hide')) {
+      line.classList.remove("show");
+      line.classList.add("hide");
   }
   
   btnKeyboard.disabled = false;
   btnCombo.disabled = false;
 }
 function toogleDown() {
-  options.classList.replace("mostrar", "ocultar");
-  arrowUp.classList.replace("ocultar", "mostrar");
-  arrowDown.classList.replace("mostrar", "ocultar");
-  line.classList.remove("ocultar");
+  options.classList.replace("show", "hide");
+  arrowUp.classList.replace("hide", "show");
+  arrowDown.classList.replace("show", "hide");
+  line.classList.remove("hide");
   btnKeyboard.disabled = true;
   btnCombo[i].disabled = true;
 }
@@ -39,25 +39,25 @@ function toogleDown() {
 //Function Keyboard
 
 function f_Keyboard(){
-  Keyboard.classList.remove("ocultar");
-  combo.classList.add("ocultar");
-  btnKeyboard.classList.remove("mostrar");
-  btnKeyboard.classList.add("ocultar");
-  btnCombo.classList.remove("ocultar");
-  btnCombo.classList.add("mostrar_null");
-  line.classList.add("ocultar");
+  Keyboard.classList.remove("hide");
+  combo.classList.add("hide");
+  btnKeyboard.classList.remove("show");
+  btnKeyboard.classList.add("hide");
+  btnCombo.classList.remove("hide");
+  btnCombo.classList.add("show_null");
+  line.classList.add("hide");
 }
 
 // Function Combo
 
 function f_combo(){
-  Keyboard.classList.add("ocultar");
-  Keyboard.classList.remove("mostrar");
-  combo.classList.remove("ocultar");
-  combo.classList.add("mostrar");
-  btnCombo.classList.remove("mostrar_null");
-  btnCombo.classList.add("ocultar");
-  btnKeyboard.classList.remove("ocultar");
-  btnKeyboard.classList.add("mostrar_null");
-  line.classList.remove("ocultar");
+  Keyboard.classList.add("hide");
+  Keyboard.classList.remove("show");
+  combo.classList.remove("hide");
+  combo.classList.add("show");
+  btnCombo.classList.remove("show_null");
+  btnCombo.classList.add("hide");
+  btnKeyboard.classList.remove("hide");
+  btnKeyboard.classList.add("show_null");
+  line.classList.remove("hide");
 }

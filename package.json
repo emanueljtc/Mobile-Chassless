@@ -1,0 +1,25 @@
+{
+  "name": "Mobile-Chassless",
+  "version": "1.1",
+  "description": "Mobile Chassless - Test de Conocimiento para la empresa Jida Desarrollos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanueljtc/Mobile-Chassless.git"
+  },
+  "keywords": [],
+  "author": "Ing. Emanuel Torres Clemente",
+  "license": "GPL 3",
+  "bugs": {
+    "url": "https://github.com/emanueljtc/Mobile-Chassless/issues"
+  },
+  "homepage": "https://github.com/emanueljtc/Mobile-Chassless#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}

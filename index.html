@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="./public/css/style.css">
+  <title>Mobile</title>
+</head>
+<body>
+  <div class="container">
+    <section id="section_operations">
+      <input name="operations" class="operations"/>
+      <button type="button" disabled id ="buttonKeyboard" class="btn btn-Keyboard show_null"><i class="fas fa-calculator"></i></button>
+      <button type="button" disabled  id="buttonCombo" class="btn btn-combo hide"><i class="fas fa-list-ul"></i></button>
+    </section>
+    <section id="section_numbers">
+        <div class="amount">
+          <p>2</p>
+          <p>2</p>
+        </div>
+        <div class="products">
+          <p>Gaseosas</p>
+          <p>Panchos</p>
+        </div>
+        <div class="prices">
+          <p>$ 450</p>
+          <p>$ 500</p>
+        </div>
+    </section>
+    <hr class="line" id="line">
+    <section id="section_total">
+      <div class="text">
+        <p>total</p>
+      </div>
+      <div class="totalAmount">
+        <p>$ 1550</p>
+      </div>
+      
+    </section>
+    <div class="boton">
+      <button class="btn btn-cobrar">cobrar</button>
+    </div>
+    <div class="toogle">
+        <span><i class="fas fa-angle-double-up show" id="arrowUp"></i></span>
+        <span><i class="fas fa-angle-double-down hide" id="arrowDown"></i></span>
+
+      <div class="hide" id="options">
+        <div  class="combo" id="combo">
+          <div class="c-1">
+            <button>
+              <p>Papas</p>
+              <p>$ 150</p>
+            </button>
+            <button>
+              <p>Papas</p>
+              <p>$ 150</p>
+            </button>
+            <button>
+              <p>Combo 3</p>
+              <p>$ 430</p>
+            </button>
+          </div>
+          <div class="c-2">
+            <button>
+              <p>Pancho</p>
+              <p>$ 250</p>
+            </button>
+            <button>
+              <p>Pancho</p>
+              <p>$ 250</p>
+            </button>
+            <button>
+              <p>Combo 4</p>
+              <p>$ 450</p>
+            </button>
+          </div>
+          <div class="c-3">
+            <button>
+              <p>Combo 1</p>
+              <p>$ 350</p>
+            </button>
+            <button>
+              <span><i class="fas fa-check"></i></span>
+              <p>Ingresar Pedido</p>
+            </button>
+          </div>
+        </div>
+        <div class="Keyboard hide" id="Keyboard">
+          <div class="c-1">
+            <button>1</button>
+            <button>4</button>
+            <button>7</button>
+            <button>
+                <i>X</i>
+                <p>Cancelar</p>
+            </button>
+          </div>
+          <div class="c-2">
+            <button>2</button>
+            <button>5</button>
+            <button>8</button>
+            <button>0</button>
+          </div>
+          <div class="c-3">
+            <button>3</button>
+            <button>6</button>
+            <button>9</button>
+            
+          </div>
+          <div class="c-4">
+            <button>X2</button>
+            <button>X3</button>
+            <button>X4</button>
+            <button>
+              <p>Aceptar</p>
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Script Custom -->
+  <script src="./public/js/script.js"></script>
+</body>
+</html>

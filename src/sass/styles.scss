@@ -7,7 +7,9 @@
   justify-content: space-around;
   background: $secondColor;
   height: 667px;
+  max-width: 400px;
   overflow-x: hidden;
+  margin: auto;
   #section_operations {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -212,5 +214,11 @@
     display: block;
   }
   .show_null {
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .container{
+    margin-top: 7%;
   }
 }

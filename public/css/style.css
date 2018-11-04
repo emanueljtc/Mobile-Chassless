@@ -8,7 +8,9 @@
   justify-content: space-around;
   background: #d21452;
   height: 667px;
-  overflow-x: hidden; }
+  max-width: 400px;
+  overflow-x: hidden;
+  margin: auto; }
   .container #section_operations {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -185,5 +187,9 @@
     display: none !important; }
   .container .show {
     display: block; }
+
+@media screen and (min-width: 1000px) {
+  .container {
+    margin-top: 7%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -188,8 +188,9 @@
   .container .show {
     display: block; }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
   .container {
-    margin-top: 7%; } }
+    margin-top: 7%;
+    height: 700px; } }
 
 /*# sourceMappingURL=style.css.map */

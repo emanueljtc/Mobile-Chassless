@@ -1,13 +1,11 @@
-// Constantes
-var options = document.getElementsByClassName("options");
-var arrowUp = document.getElementsByClassName("fa-angle-double-up");
-var arrowDown = document.getElementsByClassName("fa-angle-double-down");
-var btnTeclado = document.getElementsByClassName("btn-teclado");
-var btnCombo = document.getElementsByClassName("btn-combo");
-var line = document.getElementsByClassName("line");
-
 // Function Toogle
 function toogleUp(){
+  var options = document.getElementsByClassName("options");
+  var arrowUp = document.getElementsByClassName("fa-angle-double-up");
+  var arrowDown = document.getElementsByClassName("fa-angle-double-down");
+  var btnTeclado = document.getElementsByClassName("btn-teclado");
+  var line = document.getElementsByClassName("line");
+
   for (var i= 0; i<options.length; i++){
     options[i].classList.remove("ocultar");
     options[i].classList.add("mostrar");
@@ -28,6 +26,12 @@ function toogleUp(){
   }
 }
 function toogleDown() {
+  var options = document.getElementsByClassName("options");
+  var arrowUp = document.getElementsByClassName("fa-angle-double-up");
+  var arrowDown = document.getElementsByClassName("fa-angle-double-down");
+  var line = document.getElementsByClassName("line");
+  var btnTeclado = document.getElementsByClassName("btn-teclado");
+
   for (var i = 0; i < options.length; i++) {
     options[i].classList.remove("mostrar");
     options[i].classList.add("ocultar");
@@ -49,7 +53,14 @@ function toogleDown() {
 }
 
 //Function teclado
+
 function teclado(){
+  var teclado = document.getElementsByClassName("teclado");
+  var combo = document.getElementsByClassName("combo");
+  var btnTeclado = document.getElementsByClassName("btn-teclado");
+  var btnCombo = document.getElementsByClassName("btn-combo");
+  var line = document.getElementsByClassName("line");
+
   for (var i = 0; i < teclado.length; i++) {
     teclado[i].classList.remove("ocultar");
   }
@@ -70,7 +81,14 @@ function teclado(){
 }
 
 // Function Combo
+
 function combo(){
+  var teclado = document.getElementsByClassName("teclado");
+  var combo = document.getElementsByClassName("combo");
+  var btnTeclado = document.getElementsByClassName("btn-teclado");
+  var btnCombo = document.getElementsByClassName("btn-combo");
+  var line = document.getElementsByClassName("line");
+
   for (var i = 0; i < teclado.length; i++) {
     teclado[i].classList.add("ocultar");
     teclado[i].classList.remove("mostrar");
@@ -82,6 +100,8 @@ function combo(){
   for (var i = 0; i < btnCombo.length; i++) {
     btnCombo[i].classList.remove("mostrar_null");
     btnCombo[i].classList.add("ocultar");
+
+
   }
   for (var i = 0; i < btnTeclado.length; i++) {
     btnTeclado[i].classList.remove("ocultar");

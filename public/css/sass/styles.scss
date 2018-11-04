@@ -6,7 +6,8 @@
   flex-flow: column;
   justify-content: space-around;
   background: $secondColor;
-  height: 687px;
+  height: 667px;
+  overflow-x: hidden;
   #section_operaciones {
     margin-top: 5%;
     margin-bottom: 5%;

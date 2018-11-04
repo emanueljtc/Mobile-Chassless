@@ -7,7 +7,8 @@
   flex-flow: column;
   justify-content: space-around;
   background: #d21452;
-  height: 687px; }
+  height: 667px;
+  overflow-x: hidden; }
   .container #section_operaciones {
     margin-top: 5%;
     margin-bottom: 5%;

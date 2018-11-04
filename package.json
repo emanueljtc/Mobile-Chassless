@@ -20,6 +20,12 @@
   "homepage": "https://github.com/emanueljtc/Mobile-Chassless#readme",
   "dependencies": {},
   "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "eslint-loader": "^2.1.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "styles-loader": "^1.0.0",
     "webpack": "^4.24.0"
   }
 }

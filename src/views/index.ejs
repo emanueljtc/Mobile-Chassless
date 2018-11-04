@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Custom Style -->
-  <link rel="stylesheet" href="./public/css/style.css">
   <!-- Font-awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <title>Mobile Chassless V1.1</title>
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="/public/css/style.css">
+  <title><%= title %></title>
 </head>
 <body>
   <div class="container">
-    <section id="section_operaciones">
-      <input name="operaciones" class="operaciones"/>
-      <button type="button" disabled id ="buttonKeyboard" class="btn btn-Keyboard mostrar_null"><i class="fas fa-calculator"></i></button>
-      <button type="button" disabled  id="buttonCombo" class="btn btn-combo ocultar"><i class="fas fa-list-ul"></i></button>
+    <section id="section_operations">
+      <input name="operations" class="operations"/>
+      <button type="button" disabled id ="buttonKeyboard" class="btn btn-Keyboard show_null"><i class="fas fa-calculator"></i></button>
+      <button type="button" disabled  id="buttonCombo" class="btn btn-combo hide"><i class="fas fa-list-ul"></i></button>
     </section>
     <section id="section_numbers">
-        <div class="cant">
+        <div class="amount">
           <p>2</p>
           <p>2</p>
         </div>
@@ -26,7 +26,7 @@
           <p>Gaseosas</p>
           <p>Panchos</p>
         </div>
-        <div class="precios">
+        <div class="prices">
           <p>$ 450</p>
           <p>$ 500</p>
         </div>
@@ -36,7 +36,7 @@
       <div class="text">
         <p>total</p>
       </div>
-      <div class="monto">
+      <div class="totalAmount">
         <p>$ 1550</p>
       </div>
       
@@ -45,10 +45,10 @@
       <button class="btn btn-cobrar">cobrar</button>
     </div>
     <div class="toogle">
-        <span><i class="fas fa-angle-double-up mostrar" id="arrowUp"></i></span>
-        <span><i class="fas fa-angle-double-down ocultar" id="arrowDown"></i></span>
+        <span><i class="fas fa-angle-double-up show" id="arrowUp"></i></span>
+        <span><i class="fas fa-angle-double-down hide" id="arrowDown"></i></span>
 
-      <div class="ocultar" id="options">
+      <div class="hide" id="options">
         <div  class="combo" id="combo">
           <div class="c-1">
             <button>
@@ -89,7 +89,7 @@
             </button>
           </div>
         </div>
-        <div class="Keyboard ocultar" id="Keyboard">
+        <div class="Keyboard hide" id="Keyboard">
           <div class="c-1">
             <button>1</button>
             <button>4</button>

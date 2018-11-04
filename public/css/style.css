@@ -9,23 +9,23 @@
   background: #d21452;
   height: 667px;
   overflow-x: hidden; }
-  .container #section_operaciones {
+  .container #section_operations {
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 2%;
     width: 100%; }
-    .container #section_operaciones input {
+    .container #section_operations input {
       width: 80%;
       margin: 0px;
       background: #b21649;
       border: none;
       height: 40px; }
-    .container #section_operaciones .btn {
+    .container #section_operations .btn {
       background: #f1ef12;
       border: none;
       height: 40px;
       width: 12%; }
-      .container #section_operaciones .btn i::before {
+      .container #section_operations .btn i::before {
         background: #f1ef12; }
   .container #section_numbers,
   .container #section_total {
@@ -41,12 +41,12 @@
       font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
   .container #section_numbers {
     margin-bottom: 20px; }
-    .container #section_numbers .cant {
+    .container #section_numbers .totalAmount {
       width: 10%;
       padding-left: 30px; }
     .container #section_numbers .products {
       width: 60%; }
-    .container #section_numbers .precios {
+    .container #section_numbers .prices {
       width: 20%;
       padding-right: 20px; }
   .container hr {
@@ -181,9 +181,9 @@
     .container .toogle .Keyboard button {
       width: 80%;
       height: 90px; }
-  .container .ocultar {
+  .container .hide {
     display: none !important; }
-  .container .mostrar {
+  .container .show {
     display: block; }
 
 /*# sourceMappingURL=style.css.map */

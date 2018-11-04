@@ -8,7 +8,7 @@
   background: $secondColor;
   height: 667px;
   overflow-x: hidden;
-  #section_operaciones {
+  #section_operations {
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 2%;
@@ -46,14 +46,14 @@
   #section_numbers {
     // background: red;
     margin-bottom: 20px;
-    .cant {
+    .totalAmount {
       width: 10%; // background: aqua;
       padding-left: 30px;
     }
     .products {
       width: 60%; //background: darkgreen;
     }
-    .precios {
+    .prices {
       width: 20%; //background: blue;
       padding-right: 20px;
     }
@@ -205,12 +205,12 @@
       }
     }
   }
-  .ocultar {
+  .hide {
     display: none !important;
   }
-  .mostrar {
+  .show {
     display: block;
   }
-  .mostrar_null {
+  .show_null {
   }
 }

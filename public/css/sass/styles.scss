@@ -6,6 +6,7 @@
   flex-flow: column;
   justify-content: space-around;
   background: $secondColor;
+  height: 687px;
   #section_operaciones {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -105,6 +106,7 @@
       color: white;
       font-size: 20px;
       padding-top: 10px;
+      padding-bottom: 15px;
     }
     .combo, .teclado{
       width: 100%;

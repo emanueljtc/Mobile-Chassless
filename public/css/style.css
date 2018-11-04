@@ -6,7 +6,8 @@
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  background: #d21452; }
+  background: #d21452;
+  height: 687px; }
   .container #section_operaciones {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -87,7 +88,8 @@
     .container .toogle span > i {
       color: white;
       font-size: 20px;
-      padding-top: 10px; }
+      padding-top: 10px;
+      padding-bottom: 15px; }
     .container .toogle .combo, .container .toogle .teclado {
       width: 100%;
       display: flex;

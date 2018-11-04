@@ -1,7 +1,18 @@
+const webpack = require('webpack');
 module.exports = {
-  entry: './src/js/script.js',
+  entry: {
+    main: './src/js/script.js',
+  },
   output: {
-    path: __dirname + '/public/js/',
-    filename: 'bundle.js'
-  }
-}
+    path: './public/js/',
+    filename: 'bundle.js',
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel-loader', 'eslint-loader']
+      },
+    ]
+  },
+};

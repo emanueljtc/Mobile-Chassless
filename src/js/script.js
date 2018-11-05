@@ -60,4 +60,5 @@ function f_combo() {
   btnKeyboard.classList.remove("hide");
   btnKeyboard.classList.add("show_null");
   line.classList.remove("hide");
+
 }

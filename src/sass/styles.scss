@@ -1,21 +1,25 @@
 @import "constantes";
 @import "reset";
+body {
+  background: #e648ea78;
+}
+
 // Contanainer 
 .container {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   background: $secondColor;
-  height: 667px;
+  height: 45rem;
   max-width: 400px;
   overflow-x: hidden;
   margin: auto;
-  #section_operations {
+  .section_operations {
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 2%;
     width: 100%;
-    input {
+    > input {
       width: 80%;
       margin: 0px;
       background: $primaryColor;
@@ -32,8 +36,8 @@
       }
     }
   }
-  #section_numbers,
-  #section_total {
+  .section_numbers,
+  .section_total {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -45,10 +49,10 @@
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
     }
   }
-  #section_numbers {
+  .section_numbers {
     // background: red;
     margin-bottom: 20px;
-    .totalAmount {
+    .amount {
       width: 10%; // background: aqua;
       padding-left: 30px;
     }
@@ -67,13 +71,14 @@
     width: 90%;
     margin: auto 15px 5px;
   }
-  #section_total {
+  .section_total {
     margin-top: 20px;
     .text {
       width: 20%;
+      margin-left: -20px;
       text-transform: uppercase;
     }
-    .monto {
+    .totalAmount {
       width: 55%;
       text-align: right;
     }
@@ -146,7 +151,7 @@
           background: #00000029;
         }
       }
-      button{
+      button {
         width: 90%;
         height: 90px;
       }
@@ -159,6 +164,9 @@
         p {
           color: red;
         }
+      }
+      .c-1>button:nth-child(3n) {
+        margin-bottom: 20px;
       }
     }
     .Keyboard {
@@ -175,7 +183,8 @@
         margin-left: 6px;
       }
       .c-1>button:nth-child(4n) {
-        background: $cancelar
+        background: $cancelar;
+        margin-bottom: 20px;
       }
       .c-1>button>i {
         font-size: 20px;
@@ -201,7 +210,7 @@
           font-size: 20px;
         }
       }
-      button{
+      button {
         width: 80%;
         height: 90px;
       }
@@ -213,13 +222,32 @@
   .show {
     display: block;
   }
-  .show_null {
-  }
+  .show_null {}
 }
-
-@media screen and (min-width: 600px){
+@media (min-width: 1025px) and (max-width: 1280px) {
   .container{
-    margin-top: 7%;
-    height: 700px;
+    height: 42rem;
+    margin-top:5rem;
+  }
+  
+}
+@media screen and (min-width: 375px) and (max-width: 667px){
+  .container{
+    height: 42rem;
+  }
+  .container .section_numbers {
+    margin-bottom: 2rem;
+  }
+  .container .section_total {
+    margin-top: 0px;
+    position: relative;
+    top: -0.2rem;
+  }
+  .container .section_operations {
+    margin-bottom: 0%;
+  }
+  .container .boton {
+    margin-top: 36px;
+    margin-bottom: -14px;
   }
 }

@@ -33,7 +33,7 @@ function toogleDown() {
   arrowDown.classList.replace("show", "hide");
   line.classList.remove("hide");
   btnKeyboard.disabled = true;
-  btnCombo[i].disabled = true;
+  btnCombo.disabled = true;
 }
 
 //Function Keyboard

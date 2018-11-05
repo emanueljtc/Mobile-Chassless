@@ -5,7 +5,7 @@ module.exports = {
   entry: ['./src/js/script.js', './src/sass/styles.scss'],
 
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve('./public'),
     filename: 'bundle.js'
   },
 

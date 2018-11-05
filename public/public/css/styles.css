@@ -39,7 +39,7 @@ body {
   margin: auto; }
   .container .section_operations {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-left: 2%;
     width: 100%; }
     .container .section_operations > input {
@@ -63,7 +63,7 @@ body {
     justify-content: space-around; }
     .container .section_numbers p,
     .container .section_total p {
-      color: #fff;
+      color: #f1ef12;
       font-weight: bold;
       font-size: 16px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
@@ -94,7 +94,7 @@ body {
       text-align: right; }
   .container div.boton {
     width: 100%;
-    margin-top: 20px; }
+    margin-top: 26px; }
     .container div.boton button.btn {
       width: 90%;
       height: 50px;

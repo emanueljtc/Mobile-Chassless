@@ -1,5 +1,5 @@
 @import 'constantes';
-@import 'reset';
+@import 'normalize';
 body {
   background: #e648ea78;
 }
@@ -218,12 +218,14 @@ body {
     }
   }
   .hide {
-    display: none !important;
+    display: none !important; // important para que el comportamiento de display sea obligatoriamente none(oculto)
   }
   .show {
     display: block;
   }
-  .show_null {}
+  .show_null {
+    display: initial;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -243,9 +245,12 @@ body {
     }
     div.buttonCharge button.btn {
       width: 22rem !important;
-      height: 42px;
-      margin: -2% 2% auto 4%;
+      height: 3rem;
+      margin: -2rem 2rem auto 4rem;
       position: absolute;
+    }
+    .toogle .Keyboard .column-1 > button:nth-child(4n) {
+      margin-bottom: 0;
     }
   }
 }
@@ -253,13 +258,13 @@ body {
 @media screen and (min-width: 670px) and (max-width: 720px) {
   .container {
     height: 630px;
-    margin-top: 0px;
+    margin-top: 0;
     .section_operations {
       margin-top: 1%;
     }
     .section_numbers {
       margin-top: -1rem;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       margin-left: 13px;
     }
     .section_total {
@@ -283,7 +288,7 @@ body {
       margin-bottom: 2rem;
     }
     .section_total {
-      margin-top: 0px;
+      margin-top: 0;
       position: relative;
       top: -0.2rem;
     }
@@ -296,10 +301,11 @@ body {
       margin-bottom: -14px;
     }
     div.buttonCharge button.btn {
-      width: 21rem ;
+      width: 21rem;
     }
   }
 }
+
 @media screen and (min-width: 360px) and (max-width: 640px) {
   .container {
     height: 40rem;
@@ -323,15 +329,15 @@ body {
       margin-bottom: -14px;
     }
     div.buttonCharge button.btn {
-      width: 20rem ;
+      width: 20rem;
     }
-    .toogle .Keyboard .column-1 > button:nth-child(4n) {
+    .toogle .Keyboard .column-1>button:nth-child(4n) {
       margin-bottom: 5px;
     }
   }
-
 }
-@media (min-width: 500px){
+
+@media (min-width: 500px) {
   .container {
     height: 39rem;
     div.buttonCharge button.btn {
@@ -339,7 +345,8 @@ body {
     }
   }
 }
-@media screen and (min-width: 400px) and (max-width: 500px){
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
   .container div.buttonCharge button.btn {
     width: 24rem;
   }

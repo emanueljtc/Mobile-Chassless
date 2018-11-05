@@ -1,25 +1,26 @@
-@import "constantes";
-@import "reset";
+@import 'constantes';
+@import 'reset';
 body {
   background: #e648ea78;
 }
 
-// Contanainer 
+// Contanainer
 .container {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   background: $secondColor;
-  height: 45rem;
+  height: 38rem;
   max-width: 400px;
   overflow-x: hidden;
   margin: auto;
+  margin-top: 1rem;
   .section_operations {
     margin-top: 5%;
     margin-bottom: 2%;
     margin-left: 2%;
     width: 100%;
-    > input {
+    >input {
       width: 80%;
       margin: 0px;
       background: $primaryColor;
@@ -46,7 +47,7 @@ body {
       color: $threeColor;
       font-weight: bold;
       font-size: 16px;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
   }
   .section_numbers {
@@ -224,16 +225,18 @@ body {
   }
   .show_null {}
 }
+
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .container{
+  .container {
     height: 42rem;
-    margin-top:5rem;
+    margin-top: 5rem;
   }
-  
 }
-@media screen and (min-width: 375px) and (max-width: 667px){
-  .container{
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .container {
     height: 42rem;
+    margin-top: 0;
   }
   .container .section_numbers {
     margin-bottom: 2rem;

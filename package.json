@@ -1,11 +1,10 @@
 {
-  "name": "Mobile-Chassless",
+  "name": "MobileChassless",
   "version": "1.1.0",
   "description": "Mobile Chassless - Test de Conocimiento para la empresa Jida Desarrollos",
   "main": "index.js",
   "scripts": {
-    "start": "node src",
-    "dev": "nodemon src"
+    "start": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",
@@ -35,3 +34,4 @@
     "webpack-cli": "^3.1.2"
   }
 }
+

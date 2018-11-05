@@ -1,1 +1,112 @@
-!function(e){var t={};function s(n){if(t[n])return t[n].exports;var i=t[n]={i:n,l:!1,exports:{}};return e[n].call(i.exports,i,i.exports,s),i.l=!0,i.exports}s.m=e,s.c=t,s.d=function(e,t,n){s.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},s.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},s.t=function(e,t){if(1&t&&(e=s(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(s.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)s.d(n,i,function(t){return e[t]}.bind(null,i));return n},s.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return s.d(t,"a",t),t},s.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},s.p="",s(s.s=0)}([function(e,t,s){s(1),e.exports=s(2)},function(e,t,s){"use strict";var n=document.getElementById("options"),i=document.getElementById("arrowUp"),o=document.getElementById("arrowDown"),d=document.getElementById("line"),c=document.getElementById("buttonKeyboard"),l=document.getElementById("buttonCombo"),r=document.getElementById("Keyboard"),a=document.getElementById("combo");i.addEventListener("click",function(){n.classList.replace("hide","show"),i.classList.replace("show","hide"),o.classList.replace("hide","show"),c.classList.contains("hide")&&(d.classList.remove("show"),d.classList.add("hide"));c.disabled=!1,l.disabled=!1}),o.addEventListener("click",function(){n.classList.replace("show","hide"),i.classList.replace("hide","show"),o.classList.replace("show","hide"),d.classList.remove("hide"),c.disabled=!0,l.disabled=!0}),c.addEventListener("click",function(){r.classList.remove("hide"),a.classList.add("hide"),c.classList.remove("show"),c.classList.add("hide"),l.classList.remove("hide"),l.classList.add("show_null"),d.classList.add("hide")}),l.addEventListener("click",function(){r.classList.add("hide"),r.classList.remove("show"),a.classList.remove("hide"),a.classList.add("show"),l.classList.remove("show_null"),l.classList.add("hide"),c.classList.remove("hide"),c.classList.add("show_null"),d.classList.remove("hide")})},function(e,t){}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/script.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/js/script.js":
+/*!**************************!*\
+  !*** ./src/js/script.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n__webpack_require__(/*! ../sass/styles.scss */ \"./src/sass/styles.scss\");\n\n// Constants\nvar options = document.getElementById('options');\nvar arrowUp = document.getElementById('arrowUp');\nvar arrowDown = document.getElementById('arrowDown');\nvar line = document.getElementById('line');\nvar btnKeyboard = document.getElementById('buttonKeyboard');\nvar btnCombo = document.getElementById('buttonCombo');\nvar Keyboard = document.getElementById('Keyboard');\nvar combo = document.getElementById('combo');\n\narrowUp.addEventListener('click', toogleUp);\narrowDown.addEventListener('click', toogleDown);\nbtnKeyboard.addEventListener('click', f_Keyboard);\nbtnCombo.addEventListener('click', f_combo);\n\n// Function Toogle\nfunction toogleUp() {\n  options.classList.replace('hide', 'show');\n  arrowUp.classList.replace('show', 'hide');\n  arrowDown.classList.replace('hide', 'show');\n\n  if (btnKeyboard.classList.contains('hide')) {\n    line.classList.remove('show');\n    line.classList.add('hide');\n  }\n\n  btnKeyboard.disabled = false;\n  btnCombo.disabled = false;\n}\nfunction toogleDown() {\n  options.classList.replace('show', 'hide');\n  arrowUp.classList.replace('hide', 'show');\n  arrowDown.classList.replace('show', 'hide');\n  line.classList.remove('hide');\n  btnKeyboard.disabled = true;\n  btnCombo.disabled = true;\n}\n\n//Function Keyboard\n\nfunction f_Keyboard() {\n  Keyboard.classList.remove('hide');\n  combo.classList.add('hide');\n  btnKeyboard.classList.remove('show');\n  btnKeyboard.classList.add('hide');\n  btnCombo.classList.remove('hide');\n  btnCombo.classList.add('show_null');\n  line.classList.add('hide');\n}\n\n// Function Combo\n\nfunction f_combo() {\n  Keyboard.classList.add('hide');\n  Keyboard.classList.remove('show');\n  combo.classList.remove('hide');\n  combo.classList.add('show');\n  btnCombo.classList.remove('show_null');\n  btnCombo.classList.add('hide');\n  btnKeyboard.classList.remove('hide');\n  btnKeyboard.classList.add('show_null');\n  line.classList.remove('hide');\n}\n\n//# sourceURL=webpack:///./src/js/script.js?");
+
+/***/ }),
+
+/***/ "./src/sass/styles.scss":
+/*!******************************!*\
+  !*** ./src/sass/styles.scss ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/sass/styles.scss?");
+
+/***/ })
+
+/******/ });

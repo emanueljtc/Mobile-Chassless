@@ -8,7 +8,11 @@ module.exports = {
     path: path.resolve('public'),
     filename: 'bundle.js',
   },
-
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000,
+    inline: true
+  },
   module: {
     rules: [
       {

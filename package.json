@@ -1,0 +1,38 @@
+{
+  "name": "MobileChassless",
+  "version": "1.1.0",
+  "description": "Mobile Chassless - Test de Conocimiento para la empresa Jida Desarrollos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch --mode=development",
+    "start": "webpack-dev-server --progress --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanueljtc/Mobile-Chassless.git"
+  },
+  "keywords": [],
+  "author": "Ing. Emanuel Torres Clemente",
+  "license": "GPL 3",
+  "bugs": {
+    "url": "https://github.com/emanueljtc/Mobile-Chassless/issues"
+  },
+  "homepage": "https://github.com/emanueljtc/Mobile-Chassless#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.1",
+    "eslint-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "styles-loader": "^1.0.0",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

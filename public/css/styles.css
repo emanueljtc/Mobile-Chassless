@@ -1,0 +1,308 @@
+html, font-family {
+  font-family: sans-serif; }
+
+-ms-text-size-adjust {
+  font-size: 100%; }
+
+-webkit-text-size-adjust {
+  font-size: 100%; }
+
+body {
+  margin: 0;
+  box-sizing: content-box; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+body {
+  background: #e648ea78; }
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background: #d21452;
+  height: 38rem;
+  max-width: 30rem;
+  overflow-x: hidden;
+  margin: auto;
+  margin-top: 1rem; }
+  .container .section_operations {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 1rem;
+    width: 100%; }
+    .container .section_operations > input {
+      width: 80%;
+      margin: 0px;
+      background: #b21649;
+      border: none;
+      height: 40px; }
+    .container .section_operations .btn {
+      background: #f1ef12;
+      border: none;
+      height: 40px;
+      width: 12%; }
+      .container .section_operations .btn i::before {
+        background: #f1ef12; }
+  .container .section_numbers,
+  .container .section_total {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
+    .container .section_numbers p,
+    .container .section_total p {
+      color: #f1ef12;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  .container .section_numbers {
+    margin-bottom: 20px; }
+    .container .section_numbers .amount {
+      width: 10%;
+      padding-left: 30px; }
+    .container .section_numbers .products {
+      width: 60%; }
+    .container .section_numbers .prices {
+      width: 20%;
+      padding-right: 20px; }
+  .container hr {
+    background-color: #695b5b;
+    height: 1px;
+    border: none;
+    width: 90%;
+    margin: auto 15px 5px; }
+  .container .section_total {
+    margin-top: 20px; }
+    .container .section_total .text {
+      width: 20%;
+      margin-left: -20px;
+      text-transform: uppercase; }
+    .container .section_total .totalAmount {
+      width: 55%;
+      text-align: right; }
+  .container div.buttonCharge {
+    width: 100%;
+    margin-top: 26px; }
+    .container div.buttonCharge button.btn {
+      width: 27rem;
+      height: 50px;
+      margin: auto 2% auto 5%;
+      border: none; }
+    .container div.buttonCharge .btn-cobrar {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #d21452;
+      background: #fff;
+      font-size: 16px; }
+      .container div.buttonCharge .btn-cobrar:hover {
+        background: rgba(233, 192, 192, 0.729); }
+  .container .toogle {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.129);
+    height: auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px; }
+    .container .toogle span > i {
+      color: white;
+      font-size: 20px;
+      padding-top: 10px;
+      padding-bottom: 15px; }
+    .container .toogle .combo,
+    .container .toogle .Keyboard {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around; }
+    .container .toogle .combo .column-1,
+    .container .toogle .combo .column-2,
+    .container .toogle .combo .column-3,
+    .container .toogle .combo .column-4,
+    .container .toogle .Keyboard .column-1,
+    .container .toogle .Keyboard .column-2,
+    .container .toogle .Keyboard .column-3,
+    .container .toogle .Keyboard .column-4 {
+      margin-top: 10px; }
+      .container .toogle .combo .column-1 button,
+      .container .toogle .combo .column-2 button,
+      .container .toogle .combo .column-3 button,
+      .container .toogle .combo .column-4 button,
+      .container .toogle .Keyboard .column-1 button,
+      .container .toogle .Keyboard .column-2 button,
+      .container .toogle .Keyboard .column-3 button,
+      .container .toogle .Keyboard .column-4 button {
+        margin-bottom: 5px;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase; }
+        .container .toogle .combo .column-1 button:hover,
+        .container .toogle .combo .column-2 button:hover,
+        .container .toogle .combo .column-3 button:hover,
+        .container .toogle .combo .column-4 button:hover,
+        .container .toogle .Keyboard .column-1 button:hover,
+        .container .toogle .Keyboard .column-2 button:hover,
+        .container .toogle .Keyboard .column-3 button:hover,
+        .container .toogle .Keyboard .column-4 button:hover {
+          background-color: rgba(233, 192, 192, 0.729); }
+    .container .toogle .combo .column-1,
+    .container .toogle .combo .column-2,
+    .container .toogle .combo .column-3 {
+      width: 30%; }
+      .container .toogle .combo .column-1 button,
+      .container .toogle .combo .column-2 button,
+      .container .toogle .combo .column-3 button {
+        background: #00000029; }
+    .container .toogle .combo button {
+      width: 90%;
+      height: 90px; }
+    .container .toogle .combo .column-3 > button:nth-child(2n) {
+      background: #f1ef12;
+      height: 185px; }
+      .container .toogle .combo .column-3 > button:nth-child(2n) i {
+        margin-bottom: 50px; }
+      .container .toogle .combo .column-3 > button:nth-child(2n) p {
+        color: red; }
+    .container .toogle .combo .column-1 > button:nth-child(3n) {
+      margin-bottom: 20px; }
+    .container .toogle .Keyboard .column-1,
+    .container .toogle .Keyboard .column-2,
+    .container .toogle .Keyboard .column-3,
+    .container .toogle .Keyboard .column-4 {
+      width: 25%; }
+      .container .toogle .Keyboard .column-1 button,
+      .container .toogle .Keyboard .column-2 button,
+      .container .toogle .Keyboard .column-3 button,
+      .container .toogle .Keyboard .column-4 button {
+        background: #e648ea78; }
+    .container .toogle .Keyboard .column-1 {
+      margin-left: 6px; }
+    .container .toogle .Keyboard .column-1 > button:nth-child(4n) {
+      background: rgba(210, 20, 82, 0.09);
+      margin-bottom: 20px; }
+    .container .toogle .Keyboard .column-1 > button > i {
+      font-size: 20px; }
+    .container .toogle .Keyboard .column-4 {
+      margin-right: 10px; }
+      .container .toogle .Keyboard .column-4 button {
+        background: #00000029; }
+    .container .toogle .Keyboard .column-4 > button:nth-child(4n) {
+      width: 180%;
+      margin-left: -87px;
+      background: #f1ef12; }
+      .container .toogle .Keyboard .column-4 > button:nth-child(4n) p {
+        color: red;
+        width: 50%;
+        display: inline-block;
+        margin-right: -10px; }
+      .container .toogle .Keyboard .column-4 > button:nth-child(4n) i {
+        width: 50%;
+        font-size: 20px; }
+    .container .toogle .Keyboard button {
+      width: 80%;
+      height: 90px; }
+  .container .hide {
+    display: none !important; }
+  .container .show {
+    display: block; }
+
+@media (min-width: 1025px) {
+  .container {
+    height: 636px;
+    margin-top: 1px; }
+    .container hr {
+      margin: auto 15px 2rem; }
+    .container .section_operations {
+      margin-top: 1px;
+      margin-bottom: 0px;
+      margin-left: 1rem; }
+    .container .section_total {
+      margin-top: -30px; }
+    .container div.buttonCharge button.btn {
+      width: 22rem !important;
+      height: 42px;
+      margin: -2% 2% auto 4%;
+      position: absolute; } }
+
+@media screen and (min-width: 670px) and (max-width: 720px) {
+  .container {
+    height: 630px;
+    margin-top: 0px; }
+    .container .section_operations {
+      margin-top: 1%; }
+    .container .section_numbers {
+      margin-top: -1rem;
+      margin-bottom: 0px;
+      margin-left: 13px; }
+    .container .section_total {
+      margin-top: 0rem; }
+    .container div.buttonCharge button.btn {
+      width: 57%;
+      height: 42px;
+      margin: -4% 2% auto 5%;
+      position: absolute; } }
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .container {
+    height: 42rem !important;
+    margin-top: 0; }
+    .container .section_numbers {
+      margin-bottom: 2rem; }
+    .container .section_total {
+      margin-top: 0px;
+      position: relative;
+      top: -0.2rem; }
+    .container .section_operations {
+      margin-bottom: 0%;
+      margin-left: 1rem; }
+    .container .buttonCharge {
+      margin-top: 36px;
+      margin-bottom: -14px; }
+    .container div.buttonCharge button.btn {
+      width: 21rem; } }
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .container {
+    height: 40rem;
+    margin-top: 0; }
+    .container .section_numbers {
+      margin-bottom: 2rem; }
+    .container .section_total {
+      margin-top: 12px;
+      position: relative;
+      top: -0.2rem;
+      margin-left: 7px; }
+    .container .section_operations {
+      margin-bottom: 0%;
+      margin-left: 1rem;
+      margin-top: 6px; }
+    .container .buttonCharge {
+      margin-top: 36px;
+      margin-bottom: -14px; }
+    .container div.buttonCharge button.btn {
+      width: 20rem; }
+    .container .toogle .Keyboard .column-1 > button:nth-child(4n) {
+      margin-bottom: 5px; } }
+
+@media (min-width: 500px) {
+  .container {
+    height: 39rem; }
+    .container div.buttonCharge button.btn {
+      width: 26rem; } }
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .container div.buttonCharge button.btn {
+    width: 24rem; } }

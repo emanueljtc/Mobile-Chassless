@@ -22,7 +22,7 @@ body {
     width: 100%;
     >input {
       width: 80%;
-      margin: 0px;
+      margin: 0;
       background: $primaryColor;
       border: none;
       height: 40px;
@@ -51,17 +51,17 @@ body {
     }
   }
   .section_numbers {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.25em;
     .amount {
       width: 10%;
-      padding-left: 30px;
+      padding-left: 1.87em;
     }
     .products {
       width: 60%; //background: darkgreen;
     }
     .prices {
       width: 20%; //background: blue;
-      padding-right: 20px;
+      padding-right: 1.25em;
     }
   }
   hr {
@@ -72,10 +72,10 @@ body {
     margin: auto 15px 5px;
   }
   .section_total {
-    margin-top: 20px;
+    margin-top: 1em;
     .text {
       width: 20%;
-      margin-left: -20px;
+      margin-left: -1em;
       text-transform: uppercase;
     }
     .totalAmount {
@@ -85,10 +85,10 @@ body {
   }
   div.buttonCharge {
     width: 100%;
-    margin-top: 26px;
+    margin-top: 1.62em;
     button.btn {
       width: 27rem;
-      height: 50px;
+      height: 3.12em;
       margin: auto 2% auto 5%;
       border: none;
     }
@@ -109,10 +109,10 @@ body {
     height: auto;
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1em;
     span>i {
       color: white;
-      font-size: 20px;
+      font-size: 1em;
       padding-top: 10px;
       padding-bottom: 15px;
     }
@@ -166,7 +166,7 @@ body {
         }
       }
       .column-1>button:nth-child(3n) {
-        margin-bottom: 20px;
+        margin-bottom: 1em;
       }
     }
     .Keyboard {
@@ -184,10 +184,10 @@ body {
       }
       .column-1>button:nth-child(4n) {
         background: $cancelar;
-        margin-bottom: 20px;
+        margin-bottom: 1em;
       }
       .column-1>button>i {
-        font-size: 20px;
+        font-size: 1em;
       }
       .column-4 {
         margin-right: 10px;
@@ -207,7 +207,7 @@ body {
         }
         i {
           width: 50%;
-          font-size: 20px;
+          font-size: 1em;
         }
       }
       button {
@@ -240,23 +240,23 @@ body {
       margin-left: 1rem;
     }
     .section_total {
-      margin-top: -30px;
+      margin-top: -1.87em;
     }
     div.buttonCharge button.btn {
       width: 22rem !important;
       height: 3rem;
-      margin: -2rem 2rem auto 4rem;
+      margin: -2em 2em auto 4em;
       position: absolute;
     }
-    .toogle .Keyboard .column-1 > button:nth-child(4n) {
+    .toogle .Keyboard .column-1>button:nth-child(4n) {
       margin-bottom: 0;
     }
   }
 }
 
-@media screen and (min-width: 670px) and (max-width: 720px) {
+@media screen and (min-width: 41.87em) and (max-width: 71em) {
   .container {
-    height: 630px;
+    height: 61.87em;
     margin-top: 0;
     .section_operations {
       margin-top: 1%;
@@ -279,7 +279,7 @@ body {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media screen and (min-width: 23.43em) and (max-width: 42.31em) {
   .container {
     height: 42rem !important;
     margin-top: 0;
@@ -296,11 +296,8 @@ body {
       margin-left: 1rem;
     }
     .buttonCharge {
-      margin-top: 36px;
+      margin-top: 2.25em;
       margin-bottom: -14px;
-    }
-    div.buttonCharge button.btn {
-      width: 21rem;
     }
   }
 }
@@ -327,11 +324,12 @@ body {
       margin-top: 36px;
       margin-bottom: -14px;
     }
-    div.buttonCharge button.btn {
-      width: 20rem;
-    }
     .toogle .Keyboard .column-1>button:nth-child(4n) {
       margin-bottom: 5px;
+    }
+    div.buttonCharge button.btn {
+      width: 21em;
+      margin: auto 2% auto 5%;
     }
   }
 }
@@ -339,8 +337,13 @@ body {
 @media (min-width: 500px) {
   .container {
     height: 39rem;
-    div.buttonCharge button.btn {
-      width: 26rem;
+    div.buttonCharge{
+      margin-top: 0;
+      margin-bottom: 2em;  
+      button.btn {
+        width: 26rem;
+        margin: auto 2em auto 2em;
+      }
     }
   }
 }

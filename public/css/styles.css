@@ -447,43 +447,50 @@ body {
         width: 14%; }
         body .container .section_operations .btn i::before {
           background: #f1ef12; }
-    body .container .section_numbers,
-    body .container .section_total {
+    body .container .section_numbers {
       width: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around; }
-      body .container .section_numbers p,
-      body .container .section_total p {
+      body .container .section_numbers p {
         color: #f1ef12;
         font-weight: bold;
         font-size: 1em;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
     body .container .section_numbers {
-      margin-bottom: 1.25em; }
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 4fr 1fr; }
       body .container .section_numbers .amount {
         width: 10%;
-        padding-left: 1.87em; }
+        padding-left: 20px; }
       body .container .section_numbers .products {
         width: 60%; }
       body .container .section_numbers .prices {
-        width: 20%;
+        width: 100%;
         padding-right: 1.25em; }
     body .container hr {
       background-color: #695b5b;
       height: 1px;
       border: none;
       width: 90%;
-      margin: auto 15px 5px; }
+      margin: auto 23px 5px; }
     body .container .section_total {
-      margin-top: 1em; }
+      margin-top: 1px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      color: #f1ef12;
+      font-weight: bold; }
       body .container .section_total .text {
-        width: 20%;
-        margin-left: -1em;
+        margin-left: 18px;
         text-transform: uppercase; }
       body .container .section_total .totalAmount {
-        width: 55%;
-        text-align: right; }
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 60% 40%; }
+        body .container .section_total .totalAmount > p {
+          grid-column: 2 / 2;
+          margin-left: 1em; }
     body .container div.buttonCharge {
       width: 100%;
       margin-top: 1.62em; }

@@ -675,6 +675,27 @@ body {
       body .container .section_operations > .btn {
         width: 55px; } }
 
+/* Iphone 6/7/8 Plus */
+@media screen and (min-width: 414px) and (max-width: 736px) {
+  body {
+    background: #d21452; }
+    body .container {
+      width: 414px !important;
+      height: 100vh; }
+      body .container .section_operations > input {
+        width: 84%; }
+      body .container .section_operations > .btn {
+        width: 55px; } }
+
+/* Pixel 2 */
+@media screen and (min-width: 411px) and (max-width: 731px) {
+  body .container {
+    width: 411px; }
+    body .container .section_operations > input {
+      width: 85vw; }
+    body .container .section_operations > .btn {
+      width: 57px; } }
+
 @media (min-width: 500px) {
   .container div.buttonCharge {
     margin-top: 0;

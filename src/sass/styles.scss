@@ -1,9 +1,7 @@
 @import 'constantes';
 @import 'normalize';
 body {
-  background: #e648ea78;
-
-    // Contanainer
+  background: #e648ea78; // Contanainer
   .container {
     display: flex;
     flex-flow: column;
@@ -222,16 +220,14 @@ body {
       display: initial;
     }
   }
-
 }
-
 
 @media (min-width: 1025px) {
   .container {
     height: 636px;
     margin-top: 1px;
-    .section_operations{
-      > input {
+    .section_operations {
+      >input {
         width: 85%;
       }
     }
@@ -253,24 +249,26 @@ body {
   }
 }
 
-
 /* P9 */
-@media screen and (min-width:286px) and (max-width: 584px){
-  .container{
+
+@media screen and (min-width:286px) and (max-width: 584px) {
+  .container {
     max-width: 286px;
     margin-top: 0;
     height: 584px;
-    .section_operations{
-      > input {
+    .section_operations {
+      >input {
         width: 80%;
       }
-      > .btn {
+      >.btn {
         width: 52px;
       }
     }
   }
 }
+
 /* S5 */
+
 @media screen and (min-width: 360px) and (max-width: 640px) {
   .container {
     max-width: 37rem;
@@ -298,19 +296,57 @@ body {
     }
   }
 }
+
 /* iphone 6/7/8 */
+
 @media screen and (min-width: 375px) and (max-width: 667px) {
-  body{
+  body {
     background: $secondColor;
-    .container{
+    .container {
       width: 375px;
       height: 100vh;
-      .section_operations{
-        > input{
+      .section_operations {
+        >input {
           width: 84%;
         }
-        > .btn{
+        >.btn {
           width: 55px;
+        }
+      }
+    }
+  }
+}
+
+/* Iphone 6/7/8 Plus */
+@media screen and (min-width: 414px) and (max-width: 736px) {
+  body {
+    background: $secondColor;
+    .container {
+      width: 414px !important;
+      height: 100vh;
+      .section_operations {
+        >input {
+          width: 84%;
+        }
+        >.btn {
+          width: 55px;
+        }
+      }
+    }
+  }
+}
+
+/* Pixel 2 */
+@media screen and (min-width:411px) and (max-width: 731px) {
+  body {
+    .container {
+      width: 411px;
+      .section_operations {
+        >input {
+          width: 85vw;
+        }
+        >.btn {
+          width: 57px;
         }
       }
     }

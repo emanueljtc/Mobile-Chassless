@@ -1,6 +1,6 @@
 import '../sass/styles.scss';
 
-// Constants
+// Constantes
 const options = document.getElementById('options');
 const arrowUp = document.getElementById('arrowUp');
 const arrowDown = document.getElementById('arrowDown');

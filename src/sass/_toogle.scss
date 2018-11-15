@@ -1,0 +1,89 @@
+   body .container .toogle {
+      width: 100%;
+      background: $color-toogle;
+      height: auto;
+      display: block;
+      text-align: center;
+      margin-top: 1em;
+      span>i {
+        color: white;
+        font-size: 1em;
+        padding-top: 10px;
+        padding-bottom: 15px;
+      }
+      .Keyboard {
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 0 5px 12px 5px;
+        >div {
+          background-color: $btnKeyboard;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          color: $color-font;
+        }
+        .xNum {
+          background: $btnStandart;
+          align-items: center;
+        }
+        .btnAccept {
+          grid-column: 3 / -1;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          background-color: $threeColor;
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+          color: $color-font-second;
+          >i {
+            margin: auto;
+            color: $color-font;
+          }
+          >p {
+            margin: auto 6px;
+            margin-left: 5px;
+          }
+        }
+        .btnCancel {
+          background-color: $btnStandart;
+          display: grid;
+          >p {
+            text-transform: uppercase;
+            font-size: 12px;
+          }
+          >i {
+            margin-top: 16px;
+            margin-bottom: -6px;
+          }
+        }
+      }
+      .combo {
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 5px 12px 5px;
+        div {
+          background: #00000029;
+          color: $color-font;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        div.order {
+          grid-row: 2/4;
+          grid-column: 3/3;
+          display: grid;
+          grid-template-rows: 1fr;
+          background-color: $threeColor;
+          >span {
+            margin: auto;
+          }
+          >p {
+            color: red;
+            font-size: 0.875em;
+          }
+        }
+      }
+    }
+   

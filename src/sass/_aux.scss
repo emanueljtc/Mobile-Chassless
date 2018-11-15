@@ -1,0 +1,9 @@
+body .container .hide {
+  display: none !important; // importante para que el comportamiento de display sea obligatoriamente none(oculto)
+}
+body .cotainer .show {
+  display: block;
+}
+body .container .show_null {
+  display: initial;
+}

@@ -1,0 +1,28 @@
+   body .container .section_numbers {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      p {
+        color: $threeColor;
+        font-weight: bold;
+        font-size: 1em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+    }
+   body .container .section_numbers {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 4fr 1fr;
+      .amount {
+        width: 10%;
+        padding-left: 20px;
+      }
+      .products {
+        width: 60%;
+      }
+      .prices {
+        width: 100%;
+        padding-right: 1.25em;
+      }
+    }

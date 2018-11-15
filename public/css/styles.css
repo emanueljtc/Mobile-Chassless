@@ -422,169 +422,170 @@ template {
 
 body {
   background: #e648ea78; }
-  body .container {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    background: #d21452;
-    height: 100vh;
-    max-width: 30rem;
-    overflow-x: hidden;
-    margin: auto; }
-    body .container .section_operations {
-      margin-bottom: 2%;
-      width: 100%; }
-      body .container .section_operations > input {
-        width: 84%;
-        background: #b21649;
-        border: none;
-        height: 50px;
-        color: white; }
-      body .container .section_operations .btn {
-        background: #f1ef12;
-        border: none;
-        height: 50px;
-        width: 14%; }
-        body .container .section_operations .btn i::before {
-          background: #f1ef12; }
-    body .container .section_numbers {
-      width: 100%;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around; }
-      body .container .section_numbers p {
-        color: #f1ef12;
-        font-weight: bold;
-        font-size: 1em;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
-    body .container .section_numbers {
-      display: grid;
-      grid-gap: 5px;
-      grid-template-columns: 1fr 4fr 1fr; }
-      body .container .section_numbers .amount {
-        width: 10%;
-        padding-left: 20px; }
-      body .container .section_numbers .products {
-        width: 60%; }
-      body .container .section_numbers .prices {
-        width: 100%;
-        padding-right: 1.25em; }
-    body .container hr {
-      background-color: #695b5b;
-      height: 1px;
+
+body .container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background: #d21452;
+  height: 100vh;
+  max-width: 30rem;
+  overflow-x: hidden;
+  margin: auto; }
+  body .container .section_operations {
+    margin-bottom: 2%;
+    width: 100%; }
+    body .container .section_operations > input {
+      width: 84%;
+      background: #b21649;
       border: none;
-      width: 90%;
-      margin: auto 23px 5px; }
-    body .container .section_total {
-      margin-top: 1px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      height: 50px;
+      color: white; }
+    body .container .section_operations .btn {
+      background: #f1ef12;
+      border: none;
+      height: 50px;
+      width: 14%; }
+      body .container .section_operations .btn i::before {
+        background: #f1ef12; }
+  body .container .section_numbers {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
+    body .container .section_numbers p {
       color: #f1ef12;
-      font-weight: bold; }
-      body .container .section_total .text {
-        margin-left: 18px;
-        text-transform: uppercase; }
-      body .container .section_total .totalAmount {
-        display: grid;
-        grid-gap: 1px;
-        grid-template-columns: 60% 40%; }
-        body .container .section_total .totalAmount > p {
-          grid-column: 2 / 2;
-          margin-left: 1em; }
-    body .container div.buttonCharge {
-      display: grid;
-      grid-template-columns: 1fr 3fr 1fr; }
-      body .container div.buttonCharge > button.btn-charge {
-        width: 21rem;
-        height: 3.12em;
-        margin: auto 2% auto 2%;
-        border: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #d21452;
-        background: #fff;
-        font-size: 1em;
-        grid-column: 2 / 3; }
-        body .container div.buttonCharge > button.btn-charge:hover {
-          background: rgba(233, 192, 192, 0.729); }
-    body .container .toogle {
+      font-weight: bold;
+      font-size: 1em;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  body .container .section_numbers {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 4fr 1fr; }
+    body .container .section_numbers .amount {
+      width: 10%;
+      padding-left: 20px; }
+    body .container .section_numbers .products {
+      width: 60%; }
+    body .container .section_numbers .prices {
       width: 100%;
-      background: rgba(0, 0, 0, 0.129);
-      height: auto;
-      display: block;
-      text-align: center;
-      margin-top: 1em; }
-      body .container .toogle span > i {
-        color: white;
-        font-size: 1em;
-        padding-top: 10px;
-        padding-bottom: 15px; }
-      body .container .toogle .Keyboard {
+      padding-right: 1.25em; }
+  body .container hr {
+    background-color: #695b5b;
+    height: 1px;
+    border: none;
+    width: 90%;
+    margin: auto 23px 5px; }
+  body .container .section_total {
+    margin-top: 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #f1ef12;
+    font-weight: bold; }
+    body .container .section_total .text {
+      margin-left: 18px;
+      text-transform: uppercase; }
+    body .container .section_total .totalAmount {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: 60% 40%; }
+      body .container .section_total .totalAmount > p {
+        grid-column: 2 / 2;
+        margin-left: 1em; }
+  body .container div.buttonCharge {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; }
+    body .container div.buttonCharge > button.btn-charge {
+      width: 21rem;
+      height: 3.12em;
+      margin: auto 2% auto 2%;
+      border: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #d21452;
+      background: #fff;
+      font-size: 1em;
+      grid-column: 2 / 3; }
+      body .container div.buttonCharge > button.btn-charge:hover {
+        background: rgba(233, 192, 192, 0.729); }
+  body .container .toogle {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.129);
+    height: auto;
+    display: block;
+    text-align: center;
+    margin-top: 1em; }
+    body .container .toogle span > i {
+      color: white;
+      font-size: 1em;
+      padding-top: 10px;
+      padding-bottom: 15px; }
+    body .container .toogle .Keyboard {
+      display: grid;
+      grid-gap: 6px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      padding: 0 5px 12px 5px; }
+      body .container .toogle .Keyboard > div {
+        background-color: #e648ea78;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: #fff; }
+      body .container .toogle .Keyboard .xNum {
+        background: #00000029;
+        align-items: center; }
+      body .container .toogle .Keyboard .btnAccept {
+        grid-column: 3 / -1;
         display: grid;
-        grid-gap: 6px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        padding: 0 5px 12px 5px; }
-        body .container .toogle .Keyboard > div {
-          background-color: #e648ea78;
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
+        grid-template-columns: 1fr 1fr;
+        background-color: #f1ef12;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: red; }
+        body .container .toogle .Keyboard .btnAccept > i {
+          margin: auto;
           color: #fff; }
-        body .container .toogle .Keyboard .xNum {
-          background: #00000029;
-          align-items: center; }
-        body .container .toogle .Keyboard .btnAccept {
-          grid-column: 3 / -1;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          background-color: #f1ef12;
+        body .container .toogle .Keyboard .btnAccept > p {
+          margin: auto 6px;
+          margin-left: 5px; }
+      body .container .toogle .Keyboard .btnCancel {
+        background-color: #00000029;
+        display: grid; }
+        body .container .toogle .Keyboard .btnCancel > p {
           text-transform: uppercase;
-          font-size: 14px;
-          font-weight: bold;
-          color: red; }
-          body .container .toogle .Keyboard .btnAccept > i {
-            margin: auto;
-            color: #fff; }
-          body .container .toogle .Keyboard .btnAccept > p {
-            margin: auto 6px;
-            margin-left: 5px; }
-        body .container .toogle .Keyboard .btnCancel {
-          background-color: #00000029;
-          display: grid; }
-          body .container .toogle .Keyboard .btnCancel > p {
-            text-transform: uppercase;
-            font-size: 12px; }
-          body .container .toogle .Keyboard .btnCancel > i {
-            margin-top: 16px;
-            margin-bottom: -6px; }
-      body .container .toogle .combo {
+          font-size: 12px; }
+        body .container .toogle .Keyboard .btnCancel > i {
+          margin-top: 16px;
+          margin-bottom: -6px; }
+    body .container .toogle .combo {
+      display: grid;
+      grid-gap: 6px;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0 5px 12px 5px; }
+      body .container .toogle .combo div {
+        background: #00000029;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase; }
+      body .container .toogle .combo div.order {
+        grid-row: 2/4;
+        grid-column: 3/3;
         display: grid;
-        grid-gap: 6px;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 0 5px 12px 5px; }
-        body .container .toogle .combo div {
-          background: #00000029;
-          color: #fff;
-          font-weight: bold;
-          text-transform: uppercase; }
-        body .container .toogle .combo div.order {
-          grid-row: 2/4;
-          grid-column: 3/3;
-          display: grid;
-          grid-template-rows: 1fr;
-          background-color: #f1ef12; }
-          body .container .toogle .combo div.order > span {
-            margin: auto; }
-          body .container .toogle .combo div.order > p {
-            color: red;
-            font-size: 0.875em; }
-    body .container .hide {
-      display: none !important; }
-    body .container .show {
-      display: block; }
-    body .container .show_null {
-      display: initial; }
+        grid-template-rows: 1fr;
+        background-color: #f1ef12; }
+        body .container .toogle .combo div.order > span {
+          margin: auto; }
+        body .container .toogle .combo div.order > p {
+          color: red;
+          font-size: 0.875em; }
+  body .container .hide {
+    display: none !important; }
+  body .container .show {
+    display: block; }
+  body .container .show_null {
+    display: initial; }
 
 @media (min-width: 1025px) {
   .container {

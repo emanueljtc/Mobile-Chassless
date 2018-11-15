@@ -2,6 +2,13 @@
 @import 'normalize';
 @import 'body';
 @import 'container';
+@import 'section-operations';
+@import 'section-numbers';
+@import 'line';
+@import 'section-total';
+@import 'button-charge';
+@import 'toogle';
+@import 'aux';
 @media (min-width: 1025px) {
   .container {
     height: 636px;
@@ -37,7 +44,7 @@
           width: 52px;
         }
       }
-      div.buttonCharge>button.btn-charge {
+      .buttonCharge .btn-charge {
         width: 17rem;
       }
       .section_total .totalAmount>p {

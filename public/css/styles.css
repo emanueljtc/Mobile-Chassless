@@ -454,17 +454,15 @@ body .container .section_numbers {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 4fr 1fr; }
   body .container .section_numbers p {
     color: #f1ef12;
     font-weight: bold;
     font-size: 1em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
-
-body .container .section_numbers {
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: 1fr 4fr 1fr; }
   body .container .section_numbers .amount {
     width: 10%;
     padding-left: 20px; }

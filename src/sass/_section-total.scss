@@ -1,0 +1,22 @@
+   
+   body .container .section_total {
+      margin-top: 1px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      color: $threeColor;
+      font-weight: bold;
+      .text {
+        margin-left: 18px;
+        text-transform: uppercase;
+      }
+      .totalAmount {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 60% 40%;
+        >p {
+          grid-column: 2 / 2;
+          margin-left: 1em;
+        }
+      }
+    }
+   

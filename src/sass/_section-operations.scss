@@ -1,21 +1,25 @@
- body .container .section_operations {
-      margin-bottom: 2%;
-      width: 100%;
-      >input {
-        width: 84%;
-        background: $primaryColor;
-        border: none;
-        height: 50px;
-        color: white;
-      }
-      .btn {
-        background: $threeColor;
-        border: none;
-        height: 50px;
-        width: 14%;
-        i::before {
-          background: $threeColor;
-        }
-      }
+body .container .section_operations {
+
+  margin-bottom: 2%;
+  width: 100%;
+
+  > input {
+    width: 84%;
+    background: $primaryColor;
+    border: none;
+    height: 50px;
+    color: white;
+  }
+
+  .btn {
+    background: $threeColor;
+    border: none;
+    height: 50px;
+    width: 14%;
+    i::before {
+      background: $threeColor;
     }
+  }
+
+}
  

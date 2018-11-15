@@ -89,7 +89,7 @@ body {
     div.buttonCharge {
       display: grid;
       grid-template-columns: 1fr 3fr 1fr;
-      > button.btn-cobrar{
+      >button.btn-cobrar {
         width: 21rem;
         height: 3.12em;
         margin: auto 2% auto 2%;
@@ -124,19 +124,25 @@ body {
         flex-flow: row nowrap;
         justify-content: space-around;
       }
-      .combo{
+      .combo {
         display: grid;
-        grid-gap: 1px;
+        grid-gap: 4px;
         grid-template-columns: 1fr 1fr 1fr;
-        div{
+        padding: 0 5px 5px 5px;
+        div {
           background: #00000029;
           color: $color-font;
           font-weight: bold;
           text-transform: uppercase;
         }
-        div.pedido{
+        div.pedido {
           grid-row: 2/4;
           grid-column: 3/3;
+          display: grid;
+          grid-template-rows: 1fr;
+          > span {
+            margin: auto;
+          }
         }
       }
       .combo,
@@ -273,8 +279,8 @@ body {
 /* P9 */
 
 @media screen and (min-width:286px) and (max-width: 584px) {
-  body{
-     .container {
+  body {
+    .container {
       margin-top: 0;
       .section_operations {
         >input {
@@ -284,10 +290,10 @@ body {
           width: 52px;
         }
       }
-      div.buttonCharge > button.btn-cobrar {
+      div.buttonCharge>button.btn-cobrar {
         width: 17rem;
       }
-      .section_total .totalAmount > p {
+      .section_total .totalAmount>p {
         margin-left: 9px;
       }
     }
@@ -310,14 +316,14 @@ body {
       margin-left: 7px;
     }
     .buttonCharge {
-      .btn-cobrar{
+      .btn-cobrar {
         margin: auto 2% auto 3%;
       }
     }
     .toogle .Keyboard .column-1>button:nth-child(4n) {
       margin-bottom: 5px;
     }
-    div.buttonCharge > button.btn-cobrar {
+    div.buttonCharge>button.btn-cobrar {
       width: 21em;
       margin: auto 2% auto 4%;
       grid-column: 1 / 4;

@@ -526,8 +526,9 @@ body {
         justify-content: space-around; }
       body .container .toogle .combo {
         display: grid;
-        grid-gap: 1px;
-        grid-template-columns: 1fr 1fr 1fr; }
+        grid-gap: 4px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 5px 5px 5px; }
         body .container .toogle .combo div {
           background: #00000029;
           color: #fff;
@@ -535,7 +536,11 @@ body {
           text-transform: uppercase; }
         body .container .toogle .combo div.pedido {
           grid-row: 2/4;
-          grid-column: 3/3; }
+          grid-column: 3/3;
+          display: grid;
+          grid-template-rows: 1fr; }
+          body .container .toogle .combo div.pedido > span {
+            margin: auto; }
       body .container .toogle .combo .column-1,
       body .container .toogle .combo .column-2,
       body .container .toogle .combo .column-3,

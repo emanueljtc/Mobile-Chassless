@@ -30,80 +30,10 @@
   }
 }
 
-/* P9 */
 
-@media screen and (min-width:286px) and (max-width: 584px) {
-  body {
-    .container {
-      margin-top: 0;
-      .section_operations {
-        >input {
-          width: 80%;
-        }
-        >.btn {
-          width: 52px;
-        }
-      }
-      .buttonCharge .btn-charge {
-        width: 17rem;
-      }
-      .section_total .totalAmount>p {
-        margin-left: 9px;
-      }
-    }
-  }
-}
 
-/* S5 */
 
-@media screen and (min-width: 360px) and (max-width: 640px) {
-  .container {
-    height: 100vh;
-    margin-top: 0;
-    .section_numbers {
-      margin-bottom: 2rem;
-    }
-    .section_total {
-      margin-top: 12px;
-      position: relative;
-      top: -0.2rem;
-      margin-left: 7px;
-    }
-    .buttonCharge {
-      .btn-charge {
-        margin: auto 2% auto 3%;
-      }
-    }
-    .toogle .Keyboard .column-1>button:nth-child(4n) {
-      margin-bottom: 5px;
-    }
-    div.buttonCharge>button.btn-charge {
-      width: 21em;
-      margin: auto 2% auto 4%;
-      grid-column: 1 / 4;
-    }
-  }
-}
 
-/* iphone 6/7/8 */
-
-@media screen and (min-width: 375px) and (max-width: 667px) {
-  body {
-    background: $secondColor;
-    .container {
-      width: 375px;
-      height: 100vh;
-      .section_operations {
-        >input {
-          width: 84%;
-        }
-        >.btn {
-          width: 55px;
-        }
-      }
-    }
-  }
-}
 
 /* Iphone 6/7/8 Plus */
 
@@ -157,5 +87,77 @@
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .container div.buttonCharge button.btn {
     width: 24rem;
+  }
+}
+
+/* iphone 6/7/8 */
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  body {
+    background: $secondColor;
+    .container {
+      width: 375px;
+      height: 100vh;
+      .section_operations {
+        >input {
+          width: 84%;
+        }
+        >.btn {
+          width: 55px;
+        }
+      }
+    }
+  }
+}
+/* S5 */
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .container {
+    height: 100vh;
+    margin-top: 0;
+    .section_numbers {
+      margin-bottom: 2rem;
+    }
+    .section_total {
+      margin-top: 12px;
+      position: relative;
+      top: -0.2rem;
+      margin-left: 7px;
+    }
+    .buttonCharge {
+      .btn-charge {
+        width: 21em;
+        margin: auto 2% auto 4%;
+        grid-column: 1 / 4;
+      }
+    }
+    .toogle .Keyboard .column-1>button:nth-child(4n) {
+      margin-bottom: 5px;
+    }
+    
+  }
+}
+/* P9 */
+
+@media screen and (min-width:286px) and (max-width: 584px) {
+  body {
+    .container {
+      margin-top: 0;
+      .section_operations {
+        >input {
+          width: 80%;
+        }
+        >.btn {
+          width: 52px;
+        }
+      }
+      .buttonCharge{ 
+          .btn-charge {
+            width: 17rem;
+          }
+      }
+      .section_total .totalAmount>p {
+        margin-left: 9px;
+      }
+    }
   }
 }

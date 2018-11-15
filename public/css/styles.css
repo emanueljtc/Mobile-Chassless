@@ -498,11 +498,10 @@ body .container .section_total {
       grid-column: 2 / 2;
       margin-left: 1em; }
 
-body .container div.buttonCharge {
+body .container .buttonCharge {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr; }
-  body .container div.buttonCharge > button.btn-charge {
-    width: 21rem;
+  body .container .buttonCharge .btn-charge {
     height: 3.12em;
     margin: auto 2% auto 2%;
     border: none;
@@ -512,7 +511,7 @@ body .container div.buttonCharge {
     background: #fff;
     font-size: 1em;
     grid-column: 2 / 3; }
-    body .container div.buttonCharge > button.btn-charge:hover {
+    body .container .buttonCharge .btn-charge:hover {
       background: rgba(233, 192, 192, 0.729); }
 
 body .container .toogle {
@@ -610,52 +609,6 @@ body .container .show_null {
     .container .toogle .Keyboard .column-1 > button:nth-child(4n) {
       margin-bottom: 0; } }
 
-/* P9 */
-@media screen and (min-width: 286px) and (max-width: 584px) {
-  body .container {
-    margin-top: 0; }
-    body .container .section_operations > input {
-      width: 80%; }
-    body .container .section_operations > .btn {
-      width: 52px; }
-    body .container .buttonCharge .btn-charge {
-      width: 17rem; }
-    body .container .section_total .totalAmount > p {
-      margin-left: 9px; } }
-
-/* S5 */
-@media screen and (min-width: 360px) and (max-width: 640px) {
-  .container {
-    height: 100vh;
-    margin-top: 0; }
-    .container .section_numbers {
-      margin-bottom: 2rem; }
-    .container .section_total {
-      margin-top: 12px;
-      position: relative;
-      top: -0.2rem;
-      margin-left: 7px; }
-    .container .buttonCharge .btn-charge {
-      margin: auto 2% auto 3%; }
-    .container .toogle .Keyboard .column-1 > button:nth-child(4n) {
-      margin-bottom: 5px; }
-    .container div.buttonCharge > button.btn-charge {
-      width: 21em;
-      margin: auto 2% auto 4%;
-      grid-column: 1 / 4; } }
-
-/* iphone 6/7/8 */
-@media screen and (min-width: 375px) and (max-width: 667px) {
-  body {
-    background: #d21452; }
-    body .container {
-      width: 375px;
-      height: 100vh; }
-      body .container .section_operations > input {
-        width: 84%; }
-      body .container .section_operations > .btn {
-        width: 55px; } }
-
 /* Iphone 6/7/8 Plus */
 @media screen and (min-width: 414px) and (max-width: 736px) {
   body {
@@ -686,3 +639,47 @@ body .container .show_null {
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .container div.buttonCharge button.btn {
     width: 24rem; } }
+
+/* iphone 6/7/8 */
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  body {
+    background: #d21452; }
+    body .container {
+      width: 375px;
+      height: 100vh; }
+      body .container .section_operations > input {
+        width: 84%; }
+      body .container .section_operations > .btn {
+        width: 55px; } }
+
+/* S5 */
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .container {
+    height: 100vh;
+    margin-top: 0; }
+    .container .section_numbers {
+      margin-bottom: 2rem; }
+    .container .section_total {
+      margin-top: 12px;
+      position: relative;
+      top: -0.2rem;
+      margin-left: 7px; }
+    .container .buttonCharge .btn-charge {
+      width: 21em;
+      margin: auto 2% auto 4%;
+      grid-column: 1 / 4; }
+    .container .toogle .Keyboard .column-1 > button:nth-child(4n) {
+      margin-bottom: 5px; } }
+
+/* P9 */
+@media screen and (min-width: 286px) and (max-width: 584px) {
+  body .container {
+    margin-top: 0; }
+    body .container .section_operations > input {
+      width: 80%; }
+    body .container .section_operations > .btn {
+      width: 52px; }
+    body .container .buttonCharge .btn-charge {
+      width: 17rem; }
+    body .container .section_total .totalAmount > p {
+      margin-left: 9px; } }

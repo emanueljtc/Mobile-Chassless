@@ -1,0 +1,11 @@
+body .container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background: $secondColor;
+    height: 100vh;
+    max-width: 30rem;
+    overflow-x: hidden;
+    margin: auto;
+   
+  }

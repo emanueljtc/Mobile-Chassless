@@ -1,213 +1,14 @@
 @import 'constantes';
 @import 'normalize';
-body {
-  background: #e648ea78; 
-  // Contanainer
-  .container {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    background: $secondColor;
-    height: 100vh;
-    max-width: 30rem;
-    overflow-x: hidden;
-    margin: auto;
-    .section_operations {
-      margin-bottom: 2%;
-      width: 100%;
-      >input {
-        width: 84%;
-        background: $primaryColor;
-        border: none;
-        height: 50px;
-        color: white;
-      }
-      .btn {
-        background: $threeColor;
-        border: none;
-        height: 50px;
-        width: 14%;
-        i::before {
-          background: $threeColor;
-        }
-      }
-    }
-    .section_numbers {
-      width: 100%;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
-      p {
-        color: $threeColor;
-        font-weight: bold;
-        font-size: 1em;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      }
-    }
-    .section_numbers {
-      display: grid;
-      grid-gap: 5px;
-      grid-template-columns: 1fr 4fr 1fr;
-      .amount {
-        width: 10%;
-        padding-left: 20px;
-      }
-      .products {
-        width: 60%;
-      }
-      .prices {
-        width: 100%;
-        padding-right: 1.25em;
-      }
-    }
-    hr {
-      background-color: $color-line;
-      height: 1px;
-      border: none;
-      width: 90%;
-      margin: auto 23px 5px;
-    }
-    .section_total {
-      margin-top: 1px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      color: $threeColor;
-      font-weight: bold;
-      .text {
-        margin-left: 18px;
-        text-transform: uppercase;
-      }
-      .totalAmount {
-        display: grid;
-        grid-gap: 1px;
-        grid-template-columns: 60% 40%;
-        >p {
-          grid-column: 2 / 2;
-          margin-left: 1em;
-        }
-      }
-    }
-    div.buttonCharge {
-      display: grid;
-      grid-template-columns: 1fr 3fr 1fr;
-      >button.btn-charge {
-        width: 21rem;
-        height: 3.12em;
-        margin: auto 2% auto 2%;
-        border: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $secondColor;
-        background: $button-charge;
-        font-size: 1em;
-        grid-column: 2 / 3;
-        &:hover {
-          background: $hover;
-        }
-      }
-    }
-    .toogle {
-      width: 100%;
-      background: $color-toogle;
-      height: auto;
-      display: block;
-      text-align: center;
-      margin-top: 1em;
-      span>i {
-        color: white;
-        font-size: 1em;
-        padding-top: 10px;
-        padding-bottom: 15px;
-      }
-      .Keyboard {
-        display: grid;
-        grid-gap: 6px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        padding: 0 5px 12px 5px;
-        >div {
-          background-color: $btnKeyboard;
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          color: $color-font;
-        }
-        .xNum {
-          background: $btnStandart;
-          align-items: center;
-        }
-        .btnAccept {
-          grid-column: 3 / -1;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          background-color: $threeColor;
-          text-transform: uppercase;
-          font-size: 14px;
-          font-weight: bold;
-          color: $color-font-second;
-          >i {
-            margin: auto;
-            color: $color-font;
-          }
-          >p {
-            margin: auto 6px;
-            margin-left: 5px;
-          }
-        }
-        .btnCancel {
-          background-color: $btnStandart;
-          display: grid;
-          >p {
-            text-transform: uppercase;
-            font-size: 12px;
-          }
-          >i {
-            margin-top: 16px;
-            margin-bottom: -6px;
-          }
-        }
-      }
-      .combo {
-        display: grid;
-        grid-gap: 6px;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 0 5px 12px 5px;
-        div {
-          background: #00000029;
-          color: $color-font;
-          font-weight: bold;
-          text-transform: uppercase;
-        }
-        div.order {
-          grid-row: 2/4;
-          grid-column: 3/3;
-          display: grid;
-          grid-template-rows: 1fr;
-          background-color: $threeColor;
-          >span {
-            margin: auto;
-          }
-          >p {
-            color: red;
-            font-size: 0.875em;
-          }
-        }
-      }
-    
-     
-    }
-    .hide {
-      display: none !important; // important para que el comportamiento de display sea obligatoriamente none(oculto)
-    }
-    .show {
-      display: block;
-    }
-    .show_null {
-      display: initial;
-    }
-  }
-}
-
+@import 'body';
+@import 'container';
+@import 'section-operations';
+@import 'section-numbers';
+@import 'line';
+@import 'section-total';
+@import 'button-charge';
+@import 'toogle';
+@import 'aux';
 @media (min-width: 1025px) {
   .container {
     height: 636px;
@@ -229,80 +30,10 @@ body {
   }
 }
 
-/* P9 */
 
-@media screen and (min-width:286px) and (max-width: 584px) {
-  body {
-    .container {
-      margin-top: 0;
-      .section_operations {
-        >input {
-          width: 80%;
-        }
-        >.btn {
-          width: 52px;
-        }
-      }
-      div.buttonCharge>button.btn-charge {
-        width: 17rem;
-      }
-      .section_total .totalAmount>p {
-        margin-left: 9px;
-      }
-    }
-  }
-}
 
-/* S5 */
 
-@media screen and (min-width: 360px) and (max-width: 640px) {
-  .container {
-    height: 100vh;
-    margin-top: 0;
-    .section_numbers {
-      margin-bottom: 2rem;
-    }
-    .section_total {
-      margin-top: 12px;
-      position: relative;
-      top: -0.2rem;
-      margin-left: 7px;
-    }
-    .buttonCharge {
-      .btn-charge {
-        margin: auto 2% auto 3%;
-      }
-    }
-    .toogle .Keyboard .column-1>button:nth-child(4n) {
-      margin-bottom: 5px;
-    }
-    div.buttonCharge>button.btn-charge {
-      width: 21em;
-      margin: auto 2% auto 4%;
-      grid-column: 1 / 4;
-    }
-  }
-}
 
-/* iphone 6/7/8 */
-
-@media screen and (min-width: 375px) and (max-width: 667px) {
-  body {
-    background: $secondColor;
-    .container {
-      width: 375px;
-      height: 100vh;
-      .section_operations {
-        >input {
-          width: 84%;
-        }
-        >.btn {
-          width: 55px;
-        }
-      }
-    }
-  }
-}
 
 /* Iphone 6/7/8 Plus */
 
@@ -356,5 +87,77 @@ body {
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .container div.buttonCharge button.btn {
     width: 24rem;
+  }
+}
+
+/* iphone 6/7/8 */
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  body {
+    background: $secondColor;
+    .container {
+      width: 375px;
+      height: 100vh;
+      .section_operations {
+        >input {
+          width: 84%;
+        }
+        >.btn {
+          width: 55px;
+        }
+      }
+    }
+  }
+}
+/* S5 */
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .container {
+    height: 100vh;
+    margin-top: 0;
+    .section_numbers {
+      margin-bottom: 2rem;
+    }
+    .section_total {
+      margin-top: 12px;
+      position: relative;
+      top: -0.2rem;
+      margin-left: 7px;
+    }
+    .buttonCharge {
+      .btn-charge {
+        width: 21em;
+        margin: auto 2% auto 4%;
+        grid-column: 1 / 4;
+      }
+    }
+    .toogle .Keyboard .column-1>button:nth-child(4n) {
+      margin-bottom: 5px;
+    }
+    
+  }
+}
+/* P9 */
+
+@media screen and (min-width:286px) and (max-width: 584px) {
+  body {
+    .container {
+      margin-top: 0;
+      .section_operations {
+        >input {
+          width: 80%;
+        }
+        >.btn {
+          width: 52px;
+        }
+      }
+      .buttonCharge{ 
+          .btn-charge {
+            width: 17rem;
+          }
+      }
+      .section_total .totalAmount>p {
+        margin-left: 9px;
+      }
+    }
   }
 }

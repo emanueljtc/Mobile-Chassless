@@ -1,9 +1,9 @@
 body .container .section_total {
-      margin-top: 1px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      color: $threeColor;
-      font-weight: bold;
+  margin-top: 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: $threeColor;
+  font-weight: bold;
   .text {
     margin-left: 18px;
     text-transform: uppercase;
